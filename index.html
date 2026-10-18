@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="คลังสรุปคำพิพากษาศาลฎีกาและศาลอุทธรณ์คดีชำนัญพิเศษในคดีแรงงาน จัดหมวดตามประเด็นปัญหา ค้นด้วยคำค้นหรือเลขคดี และเปิดเอกสารที่ใช้สรุปของแต่ละเรื่อง จัดทำโดยสำนักงานทนายความและที่ปรึกษากฎหมายพรนารายณ์และเพื่อน">
+<meta property="og:type" content="website">
+<meta property="og:title" content="คลังคำพิพากษาคดีแรงงาน">
+<meta property="og:description" content="คลังสรุปคำพิพากษาศาลฎีกาและศาลอุทธรณ์คดีชำนัญพิเศษในคดีแรงงาน จัดหมวดตามประเด็นปัญหา ค้นด้วยคำค้นหรือเลขคดี และเปิดเอกสารที่ใช้สรุปของแต่ละเรื่อง จัดทำโดยสำนักงานทนายความและที่ปรึกษากฎหมายพรนารายณ์และเพื่อน">
+<meta property="og:image" content="img/lawyer.jpg">
+<meta name="color-scheme" content="light">
+<title>คลังคำพิพากษาคดีแรงงาน</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: แถบหัวดำมีแสงน้ำเงินแบบเว็บสำนักงาน ชื่อสำนักงานตัวใหญ่ พร้อมช่องค้นและประเด็นยอดนิยม /
+   ซ้ายเป็นแผนผังประเด็นที่แต่ละหมวดมีสีประจำ / ขวาเป็นโน้ตอธิบายประเด็นและการ์ดคำพิพากษา
+   หน้านี้ล็อกสีสว่างไว้ตามที่ผู้ใช้กำหนด เพื่อให้สีสดเท่ากันทุกเครื่อง ไม่ซีดตามโหมดมืด */
+:root{
+  --hero:#050608;         /* แถบหัวดำแบบเว็บสำนักงาน */
+  --glow:#14558F;         /* แสงน้ำเงินมุมแถบหัว */
+  --hero-text:#DCE7F2;
+  --hero-muted:#9FB4C9;
+  --sun:#5DA7EC;          /* ฟ้าสว่างแบบหัวเรื่องบนเว็บสำนักงาน */
+  --gold:#5DA7EC;
+  --sun-soft:#E7F2FC;     /* โน้ตประเด็น */
+  --ink:#0F1B2A;          /* ตัวอักษรหลัก */
+  --paper:#F5F7FA;
+  --surface:#FFFFFF;
+  --line:#E0E5EC;
+  --muted:#566173;
+  --accent:#0B6FB0;       /* ลิงก์และปุ่ม */
+  --accent-soft:#E3F0FA;
+  --num:#D92B2B;          /* เลขคดี */
+  --num-soft:#FFEDED;
+  --amber:#8A5200; --amber-soft:#FFF0D1;
+  --green:#176B3E; --green-soft:#E1F5E9;
+  --g0:#2F6FED; --g1:#0E9F6E; --g2:#8B5CF6; --g3:#E8590C; --g4:#E03131; --g5:#D6336C;
+  --g6:#E8A100; --g7:#0CA5B0; --g8:#7A8A00; --g9:#1C7ED6; --g10:#5C6378;
+  --display:"IBM Plex Sans Thai Looped", "Sarabun", "Leelawadee UI", sans-serif;   /* ตัวมีหัวแบบทันสมัยและทางการ */
+  --body:"IBM Plex Sans Thai Looped", "Sarabun", "Leelawadee UI", "Thonburi", system-ui, sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
+a{color:var(--accent);text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+/* สีประจำหมวด */
+.g0{--g:var(--g0)} .g1{--g:var(--g1)} .g2{--g:var(--g2)} .g3{--g:var(--g3)} .g4{--g:var(--g4)} .g5{--g:var(--g5)}
+.g6{--g:var(--g6)} .g7{--g:var(--g7)} .g8{--g:var(--g8)} .g9{--g:var(--g9)} .g10{--g:var(--g10)}
+
+/* หัวหน้า */
+.top{background:radial-gradient(ellipse 70% 95% at 85% 108%, var(--glow) 0%, #0A2D50 40%, var(--hero) 80%);color:var(--hero-text);position:relative}
+.firm span{display:block;white-space:nowrap}
+.firm{font-family:var(--display);font-weight:700;font-size:clamp(16px,4.5vw,46px);line-height:1.35;color:var(--sun);margin:0;letter-spacing:.005em}
+.top::after{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--hero),var(--sun) 50%,var(--hero))}
+.top .eyebrow{color:var(--hero-muted)}
+.top h1{color:#fff}
+.top .wrap{padding-block:30px 28px;display:grid;gap:14px}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.02em}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(22px,2.8vw,30px);line-height:1.45;margin:0;text-wrap:balance}
+h1 .hl{display:inline-block;font-size:1.75em;font-weight:700;line-height:1.3;background:var(--sun);color:var(--hero);padding:.02em .22em 0;margin:0 .14em;border-radius:.16em;vertical-align:-.12em;box-shadow:0 6px 22px rgba(93,167,236,.35)}
+.lede{margin:0;max-width:66ch;font-size:17px;text-wrap:pretty}
+.searchrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.qbox{flex:1 1 340px;min-width:0;display:flex;position:relative}
+.qgo{position:absolute;right:6px;top:6px;bottom:6px;padding:0 22px;border:0;border-radius:10px;background:var(--accent);color:#fff;font:inherit;font-size:16px;font-weight:600;cursor:pointer}
+.qgo:hover{background:#095C93}
+.searchrow .qbox input{padding-right:110px}
+.searchrow input{flex:1 1 340px;width:100%;min-width:0;padding:14px 18px;border-radius:14px;border:2px solid var(--gold);background:var(--surface);color:var(--ink);font-size:17px;box-shadow:0 0 0 4px rgba(93,167,236,.18)}
+.searchrow select{flex:1 1 170px;max-width:100%;padding:12px 14px;border-radius:14px;border:2px solid var(--gold);background:var(--surface);color:var(--ink)}
+@media (min-width:861px){.searchrow select{flex:0 0 auto}}
+.quick{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.quick .ql{font-size:14px;font-weight:600;margin-right:2px}
+.qbtn{border:1px solid rgba(93,167,236,.45);border-radius:999px;padding:5px 14px;background:rgba(255,255,255,.07);color:var(--hero-text);cursor:pointer;font-size:14.5px;font-weight:500}
+.qbtn:hover{background:var(--sun);color:var(--hero);border-color:var(--sun)}
+.top .stats b{color:var(--sun)}
+.quick .ql{color:var(--hero-text)}
+.top .stats{color:var(--hero-muted)}
+
+.stats{font-size:14px;font-variant-numeric:tabular-nums;display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (max-width:620px){.quick{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-right:calc(-1 * max(16px, env(safe-area-inset-right, 0px)))}.qbtn,.quick .ql{flex:0 0 auto;white-space:nowrap}}
+.stats b{font-weight:600;font-size:16px}
+
+/* โครงสองคอลัมน์ */
+.main{display:grid;grid-template-columns:292px minmax(0,1fr);gap:30px;padding-block:30px 44px}
+@media (max-width:860px){.main{grid-template-columns:minmax(0,1fr);gap:18px;padding-block:20px 36px}}
+
+/* แผนผังประเด็น */
+.tree{align-self:start;position:sticky;top:calc(env(safe-area-inset-top, 0px) + 12px);max-height:calc(100vh - 24px);overflow:auto;padding-right:4px}
+@media (max-width:860px){.tree{position:static;max-height:none}}
+.tree h2{font-family:var(--display);font-weight:600;font-size:16px;color:var(--muted);margin:0 0 10px}
+.group{padding-block:2px}
+.group > button{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%;padding:8px 8px;border-radius:10px;font-weight:600;font-size:15px;box-sizing:border-box}
+.group > button:hover{background:var(--surface)}
+.group > button:focus-visible{outline:3px solid var(--accent)}
+.group > button .gname{flex:1;min-width:0}
+.dot{width:12px;height:12px;border-radius:4px;background:var(--g);flex:0 0 auto}
+.group ul{list-style:none;margin:2px 0 8px;padding:0 0 0 14px;border-left:2px solid color-mix(in srgb, var(--g) 35%, transparent);margin-left:13px}
+.issue{all:unset;cursor:pointer;display:flex;justify-content:space-between;gap:8px;width:100%;padding:6px 10px;border-radius:9px;font-size:14.5px;color:var(--ink);box-sizing:border-box}
+.issue:hover{background:color-mix(in srgb, var(--g, var(--accent)) 12%, var(--surface))}
+.issue[aria-current="true"]{background:var(--glow);color:#fff}
+.issue:focus-visible{outline:3px solid var(--accent)}
+.count{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+.issue[aria-current="true"] .count{color:var(--sun)}
+.all{font-weight:600;margin-bottom:8px;background:var(--surface);border:1px solid var(--line)}
+.mobile-toggle{display:none}
+@media (max-width:860px){
+  .mobile-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;padding:13px 16px;border:2px solid var(--accent);border-radius:14px;background:var(--surface);cursor:pointer;font-weight:600}
+  .tree-body{margin-top:12px}
+}
+
+/* โน้ตประเด็น */
+.herohead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center}
+.heroart{width:340px;max-width:100%;height:auto;aspect-ratio:640/536;object-fit:cover;display:block;border-radius:18px;border:3px solid var(--sun);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+@media (max-width:980px){.heroart{width:260px}}
+@media (max-width:760px){.herohead{grid-template-columns:minmax(0,1fr)}.heroart{width:100%;max-width:420px;height:190px;aspect-ratio:auto;object-position:60% 35%;order:-1}}
+.gico{width:30px;height:30px;border-radius:9px;display:inline-grid;place-items:center;flex:0 0 auto;background:color-mix(in srgb, var(--g) 15%, var(--surface));color:var(--g)}
+.gico svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.gico.lg{width:52px;height:52px;border-radius:14px}
+.gico.lg svg{width:30px;height:30px}
+.panel.ov{background:var(--surface);border:1px solid var(--line)}
+.ovgrid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:22px 32px}
+@media (max-width:980px){.ovgrid{grid-template-columns:minmax(0,1fr)}}
+.ovh{font-family:var(--display);font-weight:700;font-size:21px;line-height:1.5;margin:0 0 2px}
+.ovsub{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.bars{display:grid;gap:4px}
+.barrow{all:unset;cursor:pointer;display:grid;grid-template-columns:30px minmax(0,14em) minmax(0,1fr) 3.2em;align-items:center;gap:10px;padding:4px 6px;border-radius:10px;font-size:14.5px;box-sizing:border-box}
+.barrow:hover{background:color-mix(in srgb, var(--g) 9%, var(--surface))}
+.barrow:focus-visible{outline:3px solid var(--accent)}
+.barrow .bn{min-width:0;font-weight:500}
+.track{height:12px;border-radius:999px;background:color-mix(in srgb, var(--g) 10%, var(--paper));overflow:hidden}
+.fill{display:block;height:100%;border-radius:999px;background:var(--g);min-width:4px}
+.barrow .bc{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);font-size:13.5px}
+@media (max-width:520px){.barrow{grid-template-columns:30px minmax(0,1fr) 3em}.barrow .track{grid-column:2/4;grid-row:2}}
+.yc{display:flex;align-items:flex-end;gap:2px;height:150px;padding-top:18px;position:relative;border-bottom:1px solid var(--line)}
+.yc span{flex:1;background:color-mix(in srgb, var(--accent) 55%, var(--surface));border-radius:4px 4px 0 0;min-height:2px;position:relative}
+.yc span:hover,.yc span.peak{background:var(--accent)}
+.yc span.peak::after{content:attr(data-n);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:12px;color:var(--ink);font-weight:600;white-space:nowrap;padding-bottom:2px}
+.ycl{display:flex;gap:2px;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ycl span{flex:1;text-align:center;white-space:nowrap;overflow:visible}
+.ytip{font-size:13px;color:var(--muted);min-height:1.5em;margin-top:6px}
+.ghead{display:flex;align-items:center;gap:14px}
+.issuebtns{display:flex;flex-wrap:wrap;gap:8px}
+.issuebtn{border:1px solid color-mix(in srgb, var(--g) 40%, var(--line));background:var(--surface);border-radius:999px;padding:5px 14px;cursor:pointer;font-size:14.5px;color:var(--ink)}
+.issuebtn:hover{background:var(--g);color:#fff;border-color:var(--g)}
+.issuebtn b{font-weight:600;color:var(--muted);margin-left:4px;font-variant-numeric:tabular-nums}
+.issuebtn:hover b{color:#fff}
+.lookup{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 22px;display:grid;gap:12px;margin-bottom:22px}
+.lookup h2{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.5;margin:0}
+.lookup .sub{margin:-6px 0 0;font-size:14px;color:var(--muted)}
+.lkrow{display:flex;flex-wrap:wrap;gap:10px}
+.lkrow input{flex:1 1 200px;min-width:0;padding:11px 14px;border:2px solid var(--line);border-radius:12px;background:var(--surface);font-size:16px;font-variant-numeric:tabular-nums}
+.lkrow input:focus{border-color:var(--accent);outline:none}
+.lkrow select{flex:1 1 220px;max-width:100%;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:var(--surface)}
+.lkout{display:grid;gap:10px}
+.lkout:empty{display:none}
+.lkgroup{border-top:1px dashed var(--line);padding-top:10px;display:grid;gap:8px}
+.lkgroup h3{margin:0;font-size:15px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lklinks{display:flex;flex-wrap:wrap;gap:8px}
+.lkbtn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:600;border:2px solid var(--accent);color:var(--accent);background:var(--surface);cursor:pointer}
+.lkbtn:hover{background:var(--accent);color:#fff}
+.lkbtn.in{background:var(--glow);border-color:var(--glow);color:var(--sun)}
+.lkbtn.in:hover{background:var(--hero)}
+.lknote{margin:0;font-size:13.5px;color:var(--muted)}
+.panel{background:var(--sun-soft);border-radius:20px;padding:22px 24px;display:grid;gap:12px;margin-bottom:24px}
+.panel .pgroup{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--muted)}
+.panel h2{font-family:var(--display);font-weight:700;font-size:clamp(22px,3vw,28px);margin:0;line-height:1.3;text-wrap:balance}
+.panel .q{margin:0;font-size:16.5px;max-width:65ch}
+.kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:15px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:500}
+.kwlabel{font-size:14px;font-weight:600;margin-bottom:8px}
+.kw{display:flex;flex-wrap:wrap;gap:8px}
+.kwbtn{border:1.5px dashed var(--ink);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 14px;cursor:pointer;font-size:14px}
+.kwbtn:hover{border-style:solid}
+.kwbtn.done{border-style:solid;background:var(--accent);border-color:var(--accent);color:#fff}
+.panel .hint{font-size:13.5px;color:var(--muted);margin:0}
+
+/* รายการ */
+.listhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.listhead h3{margin:0;font-family:var(--display);font-weight:600;font-size:19px;line-height:1.5}
+.btn{border:0;border-radius:999px;padding:10px 18px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+.btn.ghost{background:var(--surface);color:var(--accent);border:2px solid var(--accent)}
+.btn.danger{background:var(--num)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.cases{display:grid;gap:16px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;display:grid;gap:11px;transition:border-color .15s, transform .15s}
+.case:hover{border-color:#C9CCE0}
+.case-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.redno{font-weight:600;font-size:17px;color:var(--num);background:var(--num-soft);border-radius:10px;padding:1px 12px;font-variant-numeric:tabular-nums}
+.court{font-weight:600;font-size:15px}
+.chip{font-size:12.5px;font-weight:500;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.chip.pending{background:var(--amber-soft);color:var(--amber)}
+.chip.verified{background:var(--green-soft);color:var(--green)}
+.chip.checked{background:var(--accent-soft);color:var(--accent)}
+.chip.plenary{background:var(--ink);color:#fff}
+.chip.key{background:var(--sun-soft);color:var(--accent);border:1px solid var(--sun)}
+.pendingtext{color:var(--muted);font-style:italic;font-size:15px}
+.why{margin:0;font-size:15px;max-width:72ch;background:var(--sun-soft);border-radius:12px;padding:9px 14px}
+.why b{font-weight:600}
+.more{justify-self:center;margin-top:8px}
+.fullrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding-block:4px}
+.fullbtn{text-decoration:none;display:inline-flex;align-items:center;gap:6px;background:var(--hero);color:var(--sun)}
+.fullbtn:hover{background:var(--accent);color:#fff}
+.fullsrc{font-size:13.5px;color:var(--muted);min-width:0}
+.officialrow{font-size:14px;color:var(--muted);flex-basis:100%}
+.holding{margin:0;font-size:17px;line-height:1.7;max-width:70ch}
+.facts{margin:0;color:var(--muted);font-size:15px;max-width:72ch}
+.facts b{color:var(--ink);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{all:unset;cursor:pointer;font-size:13px;font-weight:500;background:color-mix(in srgb, var(--g) 13%, var(--surface));color:color-mix(in srgb, var(--g) 70%, var(--ink));border-radius:999px;padding:3px 11px}
+.tag:hover{background:var(--g);color:#fff}
+.tag:focus-visible{outline:3px solid var(--accent)}
+.case-actions{display:flex;gap:10px;flex-wrap:wrap}
+.citerow{margin:2px 0 6px}
+.btn.cite{font-size:14.5px;padding:6px 14px}
+.btn.cite.done{border-color:var(--green);color:var(--green)}
+.linkbtn{all:unset;cursor:pointer;color:var(--accent);font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:focus-visible{outline:3px solid var(--accent)}
+.qbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:-4px 0 16px;padding:14px 18px;border-radius:14px;background:#E7F2FC;border-left:5px solid var(--accent);color:var(--ink);font-size:16px;line-height:1.6}
+.qbar b{color:#0B4F80}
+.qbar .qterm{background:#FFE58A;padding:1px 6px;border-radius:4px;font-weight:600;color:var(--ink)}
+.qbar .sub{display:block;font-size:14.5px;color:var(--muted)}
+.case mark{background:#FFE58A;color:inherit;padding:0 2px;border-radius:3px}
+.foundin{margin:0 0 10px;font-size:14.5px;color:#0B4F80;font-weight:500}
+.foundin span{display:inline-block;margin:2px 6px 2px 0;padding:2px 10px;border-radius:999px;background:#E7F2FC}
+.empty{background:var(--surface);border:2px dashed var(--line);border-radius:18px;padding:24px;color:var(--muted)}
+.empty p{margin:0 0 8px}
+
+/* ฟอร์ม */
+.editor{background:var(--surface);border:2px solid var(--accent);border-radius:18px;padding:22px 24px;display:grid;gap:14px;margin-bottom:24px}
+.editor h3{margin:0;font-family:var(--display);font-weight:700;font-size:21px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px}
+@media (max-width:620px){.fields{grid-template-columns:minmax(0,1fr)}}
+.field{display:grid;gap:4px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label,.field legend{font-size:14px;font-weight:600}
+.field small{color:var(--muted);font-size:13px}
+.field input,.field select,.field textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.field textarea{min-height:90px;resize:vertical}
+fieldset.field{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0}
+.picks{display:grid;gap:8px;max-height:260px;overflow:auto}
+.picks .g{font-size:13px;color:var(--muted);margin-top:4px}
+.picks label{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:14.5px}
+.notice{border-radius:12px;padding:10px 14px;font-size:14.5px}
+.notice.err{background:var(--num-soft);color:var(--num)}
+.notice.ok{background:var(--green-soft);color:var(--green)}
+.notice.info{background:var(--accent-soft);color:var(--accent)}
+.confirm{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--num-soft);border-radius:12px;padding:10px 14px}
+
+
+/* ตัวอ่านเอกสาร PDF ในหน้า */
+.pv{position:fixed;inset:0;z-index:20;background:#0C0F14;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.pvbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;padding-block:10px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));background:var(--hero);border-bottom:2px solid var(--sun);color:#fff}
+.pvbar b{font-weight:600;font-size:15px;min-width:0}
+.pvnav{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.pvnav button{border:1px solid rgba(93,167,236,.5);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:5px 12px;cursor:pointer;font-size:14px}
+.pvnav button:hover{background:var(--sun);color:var(--hero)}
+.pvnav .pvclose{background:var(--sun);color:var(--hero);font-weight:600}
+.pvnav input{width:3.6em;text-align:center;border-radius:8px;border:1px solid rgba(255,255,255,.3);background:#fff;color:var(--ink);padding:4px;font-variant-numeric:tabular-nums}
+.pvnav span{font-size:14px;color:var(--hero-muted);font-variant-numeric:tabular-nums}
+.pvbody{flex:1;overflow:auto;display:flex;flex-direction:column;align-items:center;padding:16px}
+.pvbody canvas{background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.5);max-width:none}
+.pvmsg{color:var(--hero-text);font-size:15px;padding:30px 0;text-align:center;max-width:46ch}
+/* แหล่งทางการ */
+.foot p{margin:0 0 10px}
+.foot .ailine{margin:18px 0 0;padding-top:12px;border-top:1px solid rgba(159,180,201,.3);color:var(--hero-muted);font-size:14px}
+.stats .free{color:var(--hero-text);border:1px solid rgba(93,167,236,.55);border-radius:999px;padding:1px 12px}
+.sources-band{background:radial-gradient(ellipse 60% 80% at 10% 0%, var(--glow) 0%, #0A2D50 38%, var(--hero) 78%);color:var(--hero-text);margin-top:16px}
+.sources-band::before{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--hero),var(--sun) 50%,var(--hero))}
+.sources{padding-block:44px 48px;display:grid;gap:22px}
+.srchead h2{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.35;margin:0;color:var(--sun);text-wrap:balance}
+.srchead p{margin:4px 0 0;color:var(--hero-muted);font-size:16px}
+.srcico{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--g);color:#fff;box-shadow:0 6px 18px color-mix(in srgb, var(--g) 45%, transparent)}
+.srcico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.srct{font-weight:700;font-size:17.5px;line-height:1.4;color:#fff}
+.srcd{font-size:14.5px;color:var(--hero-muted);line-height:1.6}
+.srcfeature{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:center;padding:22px;border-radius:22px;background:linear-gradient(135deg,rgba(93,167,236,.18),rgba(93,167,236,.04));border:1px solid rgba(93,167,236,.4)}
+@media (max-width:860px){.srcfeature{grid-template-columns:minmax(0,1fr)}}
+.srcfeature-text{display:grid;gap:8px;justify-items:start}
+.booktiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px}
+@media (max-width:520px){.booktiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.booktile{display:grid;gap:2px;text-decoration:none;padding:14px 14px 12px;border-radius:14px;background:linear-gradient(160deg,#1B6FB8,#0B3D6E);color:#fff;border-left:6px solid var(--sun);box-shadow:0 8px 20px rgba(0,0,0,.35);transition:transform .15s, box-shadow .15s}
+.booktile small{font-size:12px;color:#CFE3F6}
+.booktile b{font-size:26px;font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums}
+.booktile span{font-size:13px;color:var(--sun);font-weight:600}
+.booktile:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(0,0,0,.45)}
+.srcgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:980px){.srcgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.srcgrid{grid-template-columns:minmax(0,1fr)}}
+.srccard{display:grid;grid-template-rows:auto auto 1fr auto;gap:8px;text-decoration:none;padding:20px;border-radius:20px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);transition:transform .15s, border-color .15s, background .15s, box-shadow .15s}
+.srccard:hover{transform:translateY(-4px);border-color:var(--g);background:rgba(255,255,255,.08);box-shadow:0 14px 30px color-mix(in srgb, var(--g) 28%, transparent)}
+.srccard:focus-visible,.booktile:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.srcgo{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:10px;border-top:1px solid rgba(255,255,255,.1)}
+.srcgo .host{font-size:12.5px;color:var(--hero-muted);min-width:0;overflow-wrap:anywhere}
+.srcgo .arrow{font-size:14px;font-weight:600;color:var(--sun)}
+.srccard:hover .arrow{text-decoration:underline;text-underline-offset:3px}
+.foot{font-size:13.5px;color:var(--hero-muted);max-width:82ch;margin:6px 0 0}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom, 0px) + 18px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;z-index:5}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <p class="firm"><span>สำนักงานทนายความและที่ปรึกษากฎหมาย</span><span>พรนารายณ์และเพื่อน</span></p>
+    <div class="herohead"><div style="display:grid;gap:12px;min-width:0">
+    <h1>คลัง<span class="hl">คำพิพากษา</span>คดีแรงงาน</h1>
+    <p class="lede">เลือกประเด็นปัญหาหรือพิมพ์คำค้น เพื่ออ่านสรุปหลักกฎหมายจากคำพิพากษาศาลฎีกาและศาลอุทธรณ์คดีชำนัญพิเศษ และเปิดเอกสารที่ใช้สรุปของแต่ละเรื่อง</p>
+    </div>
+      <img class="heroart" src="img/lawyer.jpg" width="640" height="536" alt="ทนายพรนารายณ์ ทุยยะค่าย หน้าศาลแรงงานกลาง">
+    </div>
+    <form class="searchrow" id="qform" role="search" novalidate>
+      <div class="qbox"><input id="q" type="search" enterkeyhint="search" aria-label="ค้นหาคำพิพากษา" placeholder="พิมพ์คำค้น เช่น ค่าชดเชย ม.119 ย้ายงาน ทุจริต" autocomplete="off"><button class="qgo" type="submit">ค้นหา</button></div>
+      <select id="court" aria-label="ศาล">
+        <option value="">ทุกศาล</option>
+        <option value="sc">ศาลฎีกา</option>
+        <option value="spc">ศาลอุทธรณ์คดีชำนัญพิเศษ</option>
+        <option value="vr">คำวินิจฉัยอำนาจศาล (วร)</option>
+      </select>
+      <select id="fullf" aria-label="ฉบับเต็ม">
+        <option value="">ทุกรายการ</option>
+                <option value="key">ฎีกาที่สำนักงานคัดเลือกและคดีประชุมใหญ่</option>
+      </select>
+    </form>
+    <div class="quick" id="quick"><span class="ql">ประเด็นหลัก</span></div>
+    <div class="stats" id="stats">กำลังโหลดข้อมูล</div>
+  </div>
+</header>
+
+<div class="wrap main">
+  <nav class="tree" aria-label="ประเด็นปัญหา">
+    <button class="mobile-toggle" id="treeToggle" type="button" aria-expanded="false"><span id="treeToggleLabel">เลือกประเด็นปัญหา</span><span aria-hidden="true">▾</span></button>
+    <div class="tree-body" id="treeBody">
+      <h2>ประเด็นปัญหา</h2>
+      <button class="issue all" type="button" data-issue="" id="allBtn"><span>ทุกประเด็น</span><span class="count" id="allCount"></span></button>
+      <div id="groups"></div>
+    </div>
+  </nav>
+
+  <main id="main-col">
+    <section class="lookup" aria-labelledby="lkh">
+      <h2 id="lkh">รู้เลขคดีแล้ว ค้นตรงได้เลย</h2>
+      <p class="sub">ใส่เลขคดี ถ้ามีในคลังนี้จะพาไปที่คลัง ถ้าไม่มีจะได้ลิงก์ไปยังเว็บไซต์ที่เผยแพร่คำพิพากษานั้น</p>
+      <form class="lkrow" id="lkform" novalidate>
+        <input id="lknum" type="text" inputmode="numeric" autocomplete="off" placeholder="เช่น 1234/2565 หรือ 1757-1772/2564" aria-label="เลขคดี">
+        <select id="lkcourt" aria-label="ศาล">
+          <option value="">ไม่แน่ใจ ค้นทั้งสองศาล</option>
+          <option value="sc">ศาลฎีกา</option>
+          <option value="spc">ศาลอุทธรณ์คดีชำนัญพิเศษ</option>
+        </select>
+        <button class="btn" type="submit">หาลิงก์</button>
+      </form>
+      <div class="lkout" id="lkout" aria-live="polite"></div>
+    </section>
+    <div id="editorSlot"></div>
+    <section class="panel" id="panel" hidden></section>
+    <div class="listhead">
+      <h3 id="listTitle">คำพิพากษาทั้งหมด</h3>
+      <button class="btn" id="addBtn" type="button" hidden>เพิ่มคำพิพากษา</button>
+    </div>
+    <div id="qbar" aria-live="polite"></div>
+    <div id="msg"></div>
+    <div class="cases" id="cases"></div>
+  </main>
+</div>
+
+<footer class="sources-band">
+  <div class="wrap sources">
+    <div class="srchead">
+      <h2>แหล่งค้นคว้าเพิ่มเติม</h2>
+      <p>หากไม่พบเรื่องที่ต้องการในคลังนี้ ค้นต่อได้ที่ระบบของศาล ระบบของหน่วยงาน และเว็บไซต์ของสำนักงาน</p>
+    </div>
+    <div class="srcfeature">
+      <div class="srcfeature-text">
+        <span class="srcico g9" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h4.5v16H4zM10 4h4.5v16H10z"/><path d="m16 5.2 3.6-.9 3.2 14.6-3.6.9z"/></svg></span>
+        <span class="srct">สรุปคำพิพากษาคดีแรงงาน ของกรมสวัสดิการและคุ้มครองแรงงาน</span>
+        <span class="srcd">หนังสือของกองนิติการ ปี 2555–2567 รวม 18 เล่ม เลือกปีที่ต้องการเพื่อเปิดอ่าน</span>
+      </div>
+      <div class="booktiles">
+        <a class="booktile" href="pdf/kssr-2555-1.pdf" target="_blank" rel="noopener"><small>เล่มที่ 1</small><b>2555</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2555-2.pdf" target="_blank" rel="noopener"><small>เล่มที่ 2</small><b>2555</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2555-3.pdf" target="_blank" rel="noopener"><small>เล่มที่ 3</small><b>2555</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2556-1.pdf" target="_blank" rel="noopener"><small>เล่มที่ 1</small><b>2556</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2556-2.pdf" target="_blank" rel="noopener"><small>เล่มที่ 2</small><b>2556</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2556-3.pdf" target="_blank" rel="noopener"><small>เล่มที่ 3</small><b>2556</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2557-1.pdf" target="_blank" rel="noopener"><small>เล่มที่ 1</small><b>2557</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2557-2.pdf" target="_blank" rel="noopener"><small>เล่มที่ 2</small><b>2557</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2558.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2558</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2559.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2559</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2560.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2560</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2561-1.pdf" target="_blank" rel="noopener"><small>เล่มที่ 1</small><b>2561</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2561-3.pdf" target="_blank" rel="noopener"><small>เล่มที่ 3</small><b>2561</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2563.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2563</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2564.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2564</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2565.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2565</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2566.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2566</b><span>เปิดอ่าน ↗</span></a>
+        <a class="booktile" href="pdf/kssr-2567.pdf" target="_blank" rel="noopener"><small>ทั้งปี</small><b>2567</b><span>เปิดอ่าน ↗</span></a>
+      </div>
+    </div>
+    <div class="srcgrid">
+      <a class="srccard g9" href="https://deka.supremecourt.or.th/" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M9.5 21V10M14.5 21V10M19 21V10M2 10l10-7 10 7z"/></svg></span>
+        <span class="srct">ระบบสืบค้นคำพิพากษาศาลฎีกา</span>
+        <span class="srcd">คำพิพากษาศาลฎีกาฉบับเต็ม ค้นด้วยคำค้นหรือเลขคดี ใช้คำค้นแนะนำในแต่ละประเด็นได้</span>
+        <span class="srcgo"><span class="host">deka.supremecourt.or.th</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+      <a class="srccard g2" href="https://sjapsc.coj.go.th/sjapsc/" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><circle cx="11" cy="14" r="2.5"/><path d="m13 16 2 2"/></svg></span>
+        <span class="srct">ย่อข้อกฎหมาย ศาลอุทธรณ์คดีชำนัญพิเศษ</span>
+        <span class="srcd">ย่อสั้นและย่อยาวของคำพิพากษาและคำวินิจฉัยที่ศาลคัดเผยแพร่ เลือกแผนกคดีแรงงานเพื่อค้นต่อ</span>
+        <span class="srcgo"><span class="host">sjapsc.coj.go.th</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+      <a class="srccard g7" href="https://legal.labour.go.th/" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></svg></span>
+        <span class="srct">กองนิติการ กรมสวัสดิการและคุ้มครองแรงงาน</span>
+        <span class="srcd">สรุปคำพิพากษาศาลประจำเดือน และหนังสือรวมคำพิพากษาคดีแรงงานรายปี</span>
+        <span class="srcgo"><span class="host">legal.labour.go.th</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+      <a class="srccard g3" href="https://www.thanaiphorn.com/content.php?type=1" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h5M7 16h10M14.5 11h2.5v2.5h-2.5z"/></svg></span>
+        <span class="srct">คำพิพากษาที่น่าสนใจ</span>
+        <span class="srcd">บทความอธิบายคำพิพากษาของสำนักงาน ซึ่งเป็นที่มาของรายการตั้งต้นในคลังนี้</span>
+        <span class="srcgo"><span class="host">thanaiphorn.com</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+      <a class="srccard g5" href="https://www.thanaiphorn.com/content.php?type=2&amp;id=911" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h4.5v16H4zM10 4h4.5v16H10z"/><path d="m16 5.2 3.6-.9 3.2 14.6-3.6.9z"/></svg></span>
+        <span class="srct">รวมคำพิพากษาศาลฎีกาแผนกคดีแรงงาน 2550–2565</span>
+        <span class="srcd">ไฟล์รายปีที่สำนักงานรวบรวมไว้บนเว็บไซต์</span>
+        <span class="srcgo"><span class="host">thanaiphorn.com</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+      <a class="srccard g1" href="http://www.lbc.coj.go.th/" target="_blank" rel="noopener">
+        <span class="srcico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0L5 7zM19 7l-3 7a3 3 0 0 0 6 0l-3-7z"/></svg></span>
+        <span class="srct">ศาลแรงงานกลาง</span>
+        <span class="srcd">ข้อมูลศาลชั้นต้นในคดีแรงงาน นัดความ และประกาศของศาล</span>
+        <span class="srcgo"><span class="host">lbc.coj.go.th</span><span class="arrow">เปิดเว็บไซต์ ↗</span></span>
+      </a>
+    </div>
+    <div class="foot">
+      <p><b>เกี่ยวกับคลังนี้</b> สำนักงานทนายความและที่ปรึกษากฎหมายพรนารายณ์และเพื่อนจัดทำคลังนี้เพื่อเผยแพร่ความรู้กฎหมายแรงงานแก่ลูกจ้าง นายจ้าง สหภาพแรงงาน และผู้ปฏิบัติงานด้านแรงงาน สรุปข้อเท็จจริงและหลักกฎหมายในแต่ละรายการเป็นงานเรียบเรียงของสำนักงาน ไม่ใช่ย่อคำพิพากษาฉบับทางการของศาลหรือของกรมสวัสดิการและคุ้มครองแรงงาน ทุกรายการระบุแหล่งที่มา และเปิดเอกสารที่ใช้สรุปได้จากเอกสารของรายการนั้น</p>
+      <p><b>ข้อควรระวังในการนำไปใช้</b> คำพิพากษาคดีแรงงานที่ตัดสินตั้งแต่ศาลอุทธรณ์คดีชำนัญพิเศษเปิดทำการ ส่วนใหญ่ถึงที่สุดในชั้นอุทธรณ์และไม่ปรากฏในระบบของศาลฎีกา บางเรื่องในเอกสารของ กสร. ยังไม่ถึงที่สุดขณะเผยแพร่ เมื่อศาลอุทธรณ์หรือศาลฎีกาไม่รับวินิจฉัยประเด็นใดเพราะเป็นอุทธรณ์ในข้อเท็จจริง สรุปจะระบุว่าข้อนั้นเป็นข้อที่ศาลแรงงานวินิจฉัยไว้ คลังนี้ใช้เพื่อค้นคว้าเบื้องต้น ก่อนอ้างอิงในคำฟ้อง คำให้การ หรือความเห็นทางกฎหมาย ต้องตรวจกับคำพิพากษาฉบับเต็ม และตรวจว่ากฎหมายที่ศาลใช้วินิจฉัยได้รับการแก้ไขภายหลังหรือไม่ เช่น อัตราค่าชดเชยตาม พ.ร.บ.คุ้มครองแรงงาน มาตรา 118 ที่แก้ไขเมื่อ พ.ศ. 2562</p>
+      <p><b>ลิขสิทธิ์ของเอกสารต้นฉบับ</b> คำพิพากษา คำสั่ง คำวินิจฉัย รายงานของทางราชการ และการรวบรวมสิ่งเหล่านี้ที่หน่วยงานของรัฐจัดทำ ไม่ถือเป็นงานอันมีลิขสิทธิ์ตาม พ.ร.บ.ลิขสิทธิ์ พ.ศ. 2537 มาตรา 7 (4) และ (5) หนังสือสรุปคำพิพากษาของกองนิติการ กรมสวัสดิการและคุ้มครองแรงงานที่เปิดอ่านได้ในคลังนี้มีเนื้อหาตรงกับฉบับที่หน่วยงานเผยแพร่ สำนักงานปรับเฉพาะขนาดไฟล์เพื่อให้เปิดอ่านได้เร็วขึ้น</p>
+      <p class="ailine">สรุปจัดทำด้วยความช่วยเหลือของระบบปัญญาประดิษฐ์และตรวจเทียบกับต้นฉบับ</p>
+    </div>
+  </div>
+</footer>
+
+<div class="pv" id="pv" hidden role="dialog" aria-modal="true" aria-labelledby="pvtitle">
+  <div class="pvbar">
+    <b id="pvtitle">เอกสาร</b>
+    <div class="pvnav">
+      <button type="button" id="pvprev">‹ ก่อนหน้า</button>
+      <span>หน้า <input id="pvpage" inputmode="numeric" aria-label="ไปหน้า"> / <span id="pvtotal">–</span></span>
+      <button type="button" id="pvnext">ถัดไป ›</button>
+      <button type="button" id="pvout" aria-label="ย่อ">−</button>
+      <button type="button" id="pvin" aria-label="ขยาย">+</button>
+      <button type="button" class="pvclose" id="pvclose">ปิด ✕</button>
+    </div>
+  </div>
+  <div class="pvbody" id="pvbody"><div class="pvmsg" id="pvmsg">กำลังเปิดเอกสาร</div><canvas id="pvcanvas" hidden></canvas></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- แผนผังประเด็นปัญหา ---------- */
+var TAX = [
+  {g:"สถานะลูกจ้างและสัญญาจ้าง", items:[
+    {id:"employee-status", t:"จ้างแรงงานหรือจ้างทำของ (ความเป็นลูกจ้าง)", q:"งานลักษณะนี้เป็นจ้างแรงงาน จ้างทำของ ตัวแทน หรือหุ้นส่วน ดูจากอำนาจบังคับบัญชาอย่างไร", law:"ป.พ.พ. ม.575, ม.587 / พ.ร.บ.คุ้มครองแรงงาน ม.5", kw:["จ้างแรงงาน จ้างทำของ","อำนาจบังคับบัญชา ลูกจ้าง","ตัวแทน นายจ้าง ลูกจ้าง"]},
+    {id:"es-executive", t:"ผู้บริหารและกรรมการเป็นลูกจ้างหรือไม่", q:"กรรมการ ผู้จัดการ หรือผู้ถือหุ้นที่ทำงานให้บริษัท มีสถานะเป็นลูกจ้างและได้สิทธิตามกฎหมายแรงงานหรือไม่", law:"ป.พ.พ. ม.575 / พ.ร.บ.คุ้มครองแรงงาน ม.5", kw:["กรรมการบริษัท ลูกจ้าง","กรรมการผู้จัดการ สัญญาจ้างแรงงาน","ผู้บริหาร ลูกจ้าง ค่าชดเชย"]},
+    {id:"es-true-employer", t:"ใครเป็นนายจ้างที่แท้จริง", q:"บริษัทในเครือ กรรมการ หรือผู้ว่าจ้างต้องร่วมรับผิดในฐานะนายจ้างหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.5 (นิยามนายจ้าง)", kw:["นายจ้าง ผู้ซึ่งได้รับมอบหมาย","บริษัทในเครือ นายจ้าง ร่วมรับผิด","กรรมการ รับผิดเป็นส่วนตัว ลูกจ้าง"]},
+    {id:"es-public", t:"ลูกจ้างหน่วยงานรัฐและรัฐวิสาหกิจ", q:"ลูกจ้างของหน่วยงานรัฐหรือรัฐวิสาหกิจอยู่ใต้กฎหมายแรงงานฉบับใด ฟ้องศาลใด", law:"พ.ร.บ.คุ้มครองแรงงาน ม.4 / พ.ร.บ.แรงงานรัฐวิสาหกิจสัมพันธ์ พ.ศ. 2543", kw:["ลูกจ้างรัฐวิสาหกิจ คุ้มครองแรงงาน","ลูกจ้างส่วนราชการ ศาลแรงงาน","แรงงานรัฐวิสาหกิจสัมพันธ์"]},
+    {id:"fixed-term", t:"สัญญาจ้างมีกำหนดระยะเวลาและการทดลองงาน", q:"สัญญาจ้างรายปี ต่อสัญญาหลายครั้ง หรือทดลองงานแล้วไม่ผ่าน ต้องจ่ายค่าชดเชยหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.17, ม.118 วรรคสาม-สี่", kw:["สัญญาจ้างมีกำหนดระยะเวลาแน่นอน ค่าชดเชย","ทดลองงาน เลิกจ้าง","ต่อสัญญาจ้าง ค่าชดเชย"]},
+    {id:"subcontract", t:"รับเหมาค่าแรงและผู้รับเหมาช่วง", q:"ลูกจ้างรับเหมาค่าแรงต้องได้สิทธิประโยชน์เท่าลูกจ้างประจำหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.11/1, ม.12", kw:["รับเหมาค่าแรง มาตรา 11/1","ผู้ประกอบกิจการ สิทธิประโยชน์ เท่าเทียม","ผู้รับเหมาช่วง ร่วมรับผิด"]},
+    {id:"transfer-business", t:"โอนกิจการและเปลี่ยนตัวนายจ้าง", q:"บริษัทควบรวม โอนกิจการ หรือโอนลูกจ้างไปบริษัทในเครือ อายุงานและสิทธิเดิมยังอยู่หรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.13 / ป.พ.พ. ม.577", kw:["โอนกิจการ สิทธิลูกจ้าง","เปลี่ยนตัวนายจ้าง ความยินยอม","บริษัทในเครือ นับอายุงาน"]}
+  ]},
+  {g:"ค่าจ้างและเงินอื่น", items:[
+    {id:"wage-definition", t:"เงินอะไรเป็นค่าจ้าง", q:"ค่าตำแหน่ง ค่าครองชีพ ค่าคอมมิชชั่น ค่าเที่ยว นับเป็นค่าจ้างเพื่อคำนวณค่าชดเชยหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.5 (นิยามค่าจ้าง)", kw:["ค่าจ้าง ค่าครองชีพ","ค่าคอมมิชชั่น เป็นค่าจ้าง","ค่าตำแหน่ง ค่าจ้าง ค่าชดเชย"]},
+    {id:"overtime", t:"ค่าล่วงเวลาและค่าทำงานในวันหยุด", q:"ใครมีสิทธิได้ค่าล่วงเวลา ผู้บริหารหรือพนักงานขายได้หรือไม่ เหมาจ่ายได้หรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.61-65", kw:["ค่าล่วงเวลา เหมาจ่าย","ค่าทำงานในวันหยุด","ม.65 ไม่มีสิทธิได้ค่าล่วงเวลา"]},
+    {id:"wage-deduction", t:"การหักค่าจ้างและเงินประกันการทำงาน", q:"นายจ้างหักค่าจ้างชดใช้ความเสียหายหรือหนี้ได้แค่ไหน เรียกเงินประกันได้เมื่อใด", law:"พ.ร.บ.คุ้มครองแรงงาน ม.10, ม.76", kw:["หักค่าจ้าง ความเสียหาย","หักค่าจ้าง ไม่ได้รับความยินยอม","เงินประกันการทำงาน คืน"]},
+    {id:"wd-interest", t:"ดอกเบี้ยและเงินเพิ่มร้อยละ 15", q:"นายจ้างจ่ายเงินล่าช้าต้องเสียดอกเบี้ยหรือเงินเพิ่มเท่าใด เริ่มนับเมื่อใด จงใจไม่จ่ายหมายถึงอะไร", law:"พ.ร.บ.คุ้มครองแรงงาน ม.9 / ป.พ.พ. ม.224", kw:["เงินเพิ่ม ร้อยละสิบห้า จงใจ","ดอกเบี้ย ค่าชดเชย ผิดนัด","ดอกเบี้ย ค่าจ้างค้างจ่าย"]},
+    {id:"wd-unpaid", t:"ค่าจ้างค้างจ่ายและการจ่ายค่าจ้าง", q:"นายจ้างต้องจ่ายค่าจ้างเมื่อใด ค่าจ้างระหว่างพักงานหรือหยุดงาน และค่าจ้างค้างจ่าย", law:"พ.ร.บ.คุ้มครองแรงงาน ม.70, ม.75, ม.117", kw:["ค่าจ้างค้างจ่าย","จ่ายค่าจ้าง กำหนดเวลา","ค่าจ้างระหว่างพักงาน"]},
+    {id:"bonus-welfare", t:"โบนัส", q:"โบนัสที่จ่ายต่อเนื่องหลายปีกลายเป็นสภาพการจ้างหรือไม่ นายจ้างมีดุลพินิจไม่จ่ายได้เมื่อใด", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.5, ม.20", kw:["โบนัส สภาพการจ้าง","โบนัส ตามดุลพินิจ","โบนัส ลูกจ้างที่ออกไปแล้ว"]},
+    {id:"bw-welfare", t:"สวัสดิการ บำเหน็จ และการขึ้นเงินเดือน", q:"ตัดหรือลดสวัสดิการเดิมได้หรือไม่ บำเหน็จและเงินรางวัลการทำงานคิดอย่างไร", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.20 / ข้อบังคับหรือระเบียบของนายจ้าง", kw:["สวัสดิการ ลดลง ความยินยอม","บำเหน็จ ข้อบังคับ ลูกจ้าง","ขึ้นเงินเดือน สภาพการจ้าง"]},
+  ]},
+  {g:"เปลี่ยนแปลงสภาพการจ้าง", items:[
+    {id:"transfer-job", t:"ย้ายงานและย้ายสถานที่ทำงาน", q:"นายจ้างสั่งย้ายตำแหน่ง ย้ายแผนก หรือย้ายสาขาได้แค่ไหน ลูกจ้างปฏิเสธได้หรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.120 / ป.พ.พ. ม.583", kw:["ย้ายงาน ไม่ต่ำกว่าเดิม","ย้ายสถานประกอบกิจการ มาตรา 120","คำสั่งย้าย ขัดคำสั่ง"]},
+    {id:"reduce-terms", t:"ลดค่าจ้างหรือลดสิทธิประโยชน์", q:"นายจ้างลดเงินเดือน ลดตำแหน่ง หรือเปลี่ยนเวลาทำงานโดยลูกจ้างไม่ยินยอม", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.20 / พ.ร.บ.คุ้มครองแรงงาน ม.5", kw:["ลดค่าจ้าง ไม่ยินยอม","เปลี่ยนแปลงสภาพการจ้าง ไม่เป็นคุณ","ลดตำแหน่ง ลงโทษ"]},
+    {id:"work-rules", t:"ข้อบังคับเกี่ยวกับการทำงาน", q:"ข้อบังคับที่นายจ้างออกหรือแก้ไขใหม่ ใช้บังคับกับลูกจ้างเดิมได้หรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.108", kw:["ข้อบังคับเกี่ยวกับการทำงาน แก้ไข","ข้อบังคับ ไม่เป็นคุณ ลูกจ้าง","ระเบียบ นายจ้าง ใช้บังคับ"]}
+  ]},
+  {g:"วินัยและการลงโทษ", items:[
+    {id:"warning", t:"หนังสือเตือน", q:"หนังสือเตือนแบบใดใช้ได้ เตือนแล้วทำผิดซ้ำต้องเป็นเรื่องเดียวกันหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 วรรคหนึ่ง (4)", kw:["หนังสือเตือน ฝ่าฝืนซ้ำ","หนังสือเตือน หนึ่งปี","หนังสือเตือน เรื่องเดียวกัน"]},
+    {id:"suspension", t:"การพักงานระหว่างสอบสวน", q:"นายจ้างพักงานได้นานเท่าไร ต้องจ่ายเงินระหว่างพักงานเท่าใด", law:"พ.ร.บ.คุ้มครองแรงงาน ม.116, ม.117", kw:["พักงาน สอบสวน","พักงาน จ่ายเงิน ร้อยละห้าสิบ","สั่งพักงาน ไม่เป็นธรรม"]}
+  ]},
+  {g:"การเลิกจ้างและค่าชดเชย", items:[
+    {id:"sev-dishonest", t:"ทุจริตต่อหน้าที่หรือกระทำผิดอาญาต่อนายจ้าง", q:"ยักยอก ลักทรัพย์ เบิกเงินเท็จ รับประโยชน์มิชอบ แค่ไหนถือว่าทุจริตต่อหน้าที่จนไม่ต้องจ่ายค่าชดเชย", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (1)", kw:["ทุจริตต่อหน้าที่ ค่าชดเชย","กระทำความผิดอาญาโดยเจตนาแก่นายจ้าง","ยักยอก ลูกจ้าง เลิกจ้าง"]},
+    {id:"sev-wilful", t:"จงใจทำให้นายจ้างได้รับความเสียหาย", q:"การกระทำแบบใดถือว่าจงใจทำให้นายจ้างเสียหาย ต้องเกิดความเสียหายจริงหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (2)", kw:["จงใจทำให้นายจ้างได้รับความเสียหาย","มาตรา 119 (2) ค่าชดเชย","จงใจ เสียหาย เลิกจ้าง"]},
+    {id:"sev-negligence", t:"ประมาทเลินเล่อทำให้นายจ้างเสียหายร้ายแรง", q:"ความประมาทระดับใดและความเสียหายเท่าใดจึงถือว่าร้ายแรงจนไม่ต้องจ่ายค่าชดเชย", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (3)", kw:["ประมาทเลินเล่อ เสียหายอย่างร้ายแรง","มาตรา 119 (3)","ประมาทเลินเล่อ ค่าชดเชย"]},
+    {id:"sev-rules-serious", t:"ฝ่าฝืนข้อบังคับกรณีร้ายแรง (ไม่ต้องเตือนก่อน)", q:"การฝ่าฝืนแบบใดศาลถือว่าร้ายแรงพอที่นายจ้างเลิกจ้างได้ทันทีโดยไม่ต้องจ่ายค่าชดเชยและไม่ต้องเตือนก่อน", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (4)", kw:["ฝ่าฝืนข้อบังคับ กรณีที่ร้ายแรง","กรณีที่ร้ายแรง ไม่ต้องตักเตือน","ไม่ใช่กรณีร้ายแรง ค่าชดเชย"]},
+    {id:"sev-rules-warning", t:"ฝ่าฝืนซ้ำคำเตือน", q:"หนังสือเตือนต้องมีลักษณะอย่างไร การฝ่าฝืนซ้ำต้องเป็นเรื่องเดียวกันและภายในหนึ่งปีหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (4)", kw:["ฝ่าฝืนซ้ำคำเตือน","หนังสือเตือน เรื่องเดียวกัน หนึ่งปี","ตักเตือนเป็นหนังสือ ค่าชดเชย"]},
+    {id:"sev-rules", t:"ข้อบังคับหรือคำสั่งชอบด้วยกฎหมายหรือไม่", q:"ข้อบังคับ ระเบียบ หรือคำสั่งที่ลูกจ้างฝ่าฝืนชอบด้วยกฎหมายและเป็นธรรมหรือไม่ และลูกจ้างฝ่าฝืนจริงหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (4)", kw:["คำสั่งอันชอบด้วยกฎหมาย และเป็นธรรม","ฝ่าฝืนคำสั่ง ไม่ชอบด้วยกฎหมาย","ข้อบังคับ ไม่เป็นธรรม เลิกจ้าง"]},
+    {id:"sev-abandon", t:"ละทิ้งหน้าที่สามวันทำงานติดต่อกัน", q:"ขาดงานแบบใดถือว่าละทิ้งหน้าที่ และอะไรนับเป็นเหตุอันสมควร", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (5)", kw:["ละทิ้งหน้าที่ สามวันทำงานติดต่อกัน","ละทิ้งหน้าที่ เหตุอันสมควร","มาตรา 119 (5)"]},
+    {id:"sev-other", t:"เหตุอื่นและหลักทั่วไปตาม ม.119", q:"ลูกจ้างได้รับโทษจำคุก และนายจ้างต้องระบุเหตุไว้ในหนังสือเลิกจ้างจึงจะยกขึ้นอ้างได้", law:"พ.ร.บ.คุ้มครองแรงงาน ม.119 (6), ม.119 วรรคสอง", kw:["ได้รับโทษจำคุก ค่าชดเชย","ไม่ได้ระบุเหตุในหนังสือเลิกจ้าง ยกขึ้นอ้างภายหลัง","มาตรา 119 วรรคสอง"]},
+    {id:"notice", t:"สินจ้างแทนการบอกกล่าวล่วงหน้า", q:"นายจ้างต้องบอกกล่าวล่วงหน้าเมื่อใด คำนวณสินจ้างแทนอย่างไร", law:"พ.ร.บ.คุ้มครองแรงงาน ม.17, ม.17/1 / ป.พ.พ. ม.582, ม.583", kw:["สินจ้างแทนการบอกกล่าวล่วงหน้า","บอกกล่าวล่วงหน้า งวดการจ่ายค่าจ้าง","มาตรา 583 เลิกจ้าง"]},
+    {id:"resign-or-dismiss", t:"การกระทำใดเป็นการเลิกจ้าง", q:"ไม่ให้ทำงาน ไม่จ่ายค่าจ้าง สัญญาสิ้นสุด หรือปิดกิจการ ถือเป็นการเลิกจ้างหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.118 วรรคสอง", kw:["ไม่ให้ทำงาน ไม่จ่ายค่าจ้าง เลิกจ้าง","มาตรา 118 วรรคสอง","ถือว่าเลิกจ้าง ค่าชดเชย"]},
+    {id:"rd-resign", t:"การลาออก: ถูกบีบ ข่มขู่ หรือถอนใบลาออก", q:"ถูกบีบให้เขียนใบลาออก ลาออกเพราะสำคัญผิด หรือขอถอนใบลาออก ถือเป็นการเลิกจ้างหรือไม่", law:"ป.พ.พ. ม.156, ม.164, ม.582", kw:["บีบบังคับ ลาออก เลิกจ้าง","ใบลาออก ข่มขู่ โมฆียะ","ถอนใบลาออก"]},
+    {id:"rd-scheme", t:"โครงการสมัครใจลาออกและเกษียณก่อนกำหนด", q:"เข้าร่วมโครงการสมัครใจลาออกแล้วเรียกค่าชดเชยหรือเงินอื่นเพิ่มได้หรือไม่", law:"ป.พ.พ. ม.582 / พ.ร.บ.คุ้มครองแรงงาน ม.118", kw:["โครงการสมัครใจลาออก ค่าชดเชย","เกษียณก่อนกำหนด เงินช่วยเหลือ","ตกลงเลิกสัญญาจ้าง ความยินยอม"]},
+    {id:"restructure", t:"เลิกจ้างเพราะปรับปรุงหน่วยงานหรือนำเทคโนโลยีมาใช้", q:"นายจ้างปรับโครงสร้าง ลดคน หรือนำเครื่องจักรมาใช้ ต้องทำอย่างไร จ่ายค่าชดเชยพิเศษเท่าใด", law:"พ.ร.บ.คุ้มครองแรงงาน ม.121, ม.122", kw:["ปรับปรุงหน่วยงาน เลิกจ้าง","ค่าชดเชยพิเศษ เทคโนโลยี","ลดจำนวนลูกจ้าง ขาดทุน"]},
+    {id:"temporary-closure", t:"หยุดกิจการชั่วคราวและปิดกิจการ", q:"นายจ้างประสบเหตุจำเป็นต้องหยุดกิจการ จ่ายร้อยละ 75 ได้เมื่อใด", law:"พ.ร.บ.คุ้มครองแรงงาน ม.75", kw:["หยุดกิจการชั่วคราว ร้อยละเจ็ดสิบห้า","เหตุจำเป็น มาตรา 75","ปิดกิจการ ค่าชดเชย"]},
+    {id:"performance", t:"ผลงานไม่ผ่านเกณฑ์และการประเมิน", q:"เลิกจ้างเพราะผลการประเมินต่ำหรือไม่ผ่าน PIP เป็นธรรมหรือไม่", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49 / พ.ร.บ.คุ้มครองแรงงาน ม.119", kw:["ผลการปฏิบัติงาน เลิกจ้าง","ประเมินผล ไม่ผ่านเกณฑ์","หย่อนสมรรถภาพ เลิกจ้าง"]},
+    {id:"retirement", t:"เกษียณอายุ", q:"การเกษียณอายุเป็นการเลิกจ้างหรือไม่ อายุเท่าใด ต้องจ่ายค่าชดเชยอย่างไร", law:"พ.ร.บ.คุ้มครองแรงงาน ม.118/1", kw:["เกษียณอายุ ค่าชดเชย","เกษียณ เลิกจ้าง","ม.118/1"]}
+  ]},
+  {g:"เลิกจ้างไม่เป็นธรรม", items:[
+    {id:"unfair-dismissal", t:"หลักทั่วไปเรื่องเหตุอันสมควร", q:"ศาลพิจารณาเหตุอันสมควรในการเลิกจ้างจากอะไร ใช้เหตุตามหนังสือเลิกจ้างอย่างไร", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["เลิกจ้างไม่เป็นธรรม เหตุอันสมควร","ไม่มีเหตุอันสมควรเพียงพอ","เลิกจ้าง กลั่นแกล้ง"]},
+    {id:"ud-economic", t:"เลิกจ้างเพราะขาดทุนหรือลดคน", q:"ขาดทุน ยุบหน่วยงาน หรือลดคน เป็นเหตุอันสมควรเมื่อใด และต้องเลือกคนออกอย่างเป็นธรรมหรือไม่", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["ขาดทุน เลิกจ้าง เหตุอันสมควร","ลดจำนวนลูกจ้าง หลักเกณฑ์","ยุบหน่วยงาน เลิกจ้างไม่เป็นธรรม"]},
+    {id:"ud-conduct", t:"เลิกจ้างเพราะความประพฤติหรือความผิดไม่ร้ายแรง", q:"ความผิดเล็กน้อย ขัดคำสั่ง หรือพฤติกรรมไม่เหมาะสม เป็นเหตุให้เลิกจ้างได้แค่ไหน", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["ความผิดไม่ร้ายแรง เลิกจ้างไม่เป็นธรรม","พฤติกรรม ไม่เหมาะสม เลิกจ้าง","ขัดคำสั่ง เลิกจ้าง เหตุอันสมควร"]},
+    {id:"ud-capacity", t:"เลิกจ้างเพราะเจ็บป่วยหรือขาดงาน", q:"เจ็บป่วยบ่อย ลาป่วยมาก หรือขาดงาน เป็นเหตุอันสมควรในการเลิกจ้างหรือไม่", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["เจ็บป่วย เลิกจ้าง เหตุอันสมควร","ลาป่วยบ่อย เลิกจ้าง","ขาดงาน เลิกจ้างไม่เป็นธรรม"]},
+    {id:"ud-trust", t:"เลิกจ้างเพราะหมดความไว้วางใจ", q:"นายจ้างอ้างว่าไม่ไว้วางใจหรือขัดแย้งกับผู้บังคับบัญชา เป็นเหตุอันสมควรเมื่อใด", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["ขาดความไว้วางใจ เลิกจ้าง","ขัดแย้ง ผู้บังคับบัญชา เลิกจ้าง","ไว้วางใจ ตำแหน่งสำคัญ เลิกจ้าง"]},
+    {id:"damages-reinstate", t:"ค่าเสียหายและการรับกลับเข้าทำงาน", q:"ศาลกำหนดค่าเสียหายอย่างไร เมื่อใดสั่งรับกลับเข้าทำงาน", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.49", kw:["ค่าเสียหาย เลิกจ้างไม่เป็นธรรม อายุงาน","รับกลับเข้าทำงาน","ค่าเสียหาย ม.49 ดุลพินิจ"]}
+  ]},
+  {g:"แรงงานสัมพันธ์", items:[
+    {id:"unfair-labour-practice", t:"การกระทำอันไม่เป็นธรรม", q:"เลิกจ้างหรือโยกย้ายเพราะเป็นสมาชิกหรือกรรมการสหภาพ ยื่นข้อเรียกร้อง หรือเป็นพยาน", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.121, ม.122, ม.123, ม.124", kw:["การกระทำอันไม่เป็นธรรม มาตรา 121","กรรมการลูกจ้าง ขออนุญาต ศาล","มาตรา 123 ข้อตกลง มีผลใช้บังคับ"]},
+    {id:"demands-agreement", t:"ข้อเรียกร้องและข้อตกลงเกี่ยวกับสภาพการจ้าง", q:"ข้อตกลงผูกพันใคร ใช้บังคับนานเท่าไร ข้อเรียกร้องที่ไม่ชอบมีผลอย่างไร", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.10, ม.12, ม.13, ม.20, ม.31", kw:["ข้อตกลงเกี่ยวกับสภาพการจ้าง ผูกพัน","ข้อเรียกร้อง มาตรา 13","ระหว่างข้อเรียกร้อง ห้ามเลิกจ้าง มาตรา 31"]},
+    {id:"strike-lockout", t:"การนัดหยุดงานและการปิดงาน", q:"การนัดหยุดงานหรือปิดงานชอบด้วยกฎหมายเมื่อใด ลูกจ้างได้ค่าจ้างระหว่างปิดงานหรือไม่", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.5, ม.22, ม.34", kw:["ปิดงาน ค่าจ้าง","นัดหยุดงาน ชอบด้วยกฎหมาย","ข้อพิพาทแรงงานที่ตกลงกันไม่ได้"]},
+    {id:"union", t:"สหภาพแรงงานและกรรมการลูกจ้าง", q:"การจัดตั้ง การบริหาร และความคุ้มครองกรรมการสหภาพและกรรมการลูกจ้าง", law:"พ.ร.บ.แรงงานสัมพันธ์ ม.45, ม.52 และหมวดสหภาพแรงงาน", kw:["กรรมการลูกจ้าง มาตรา 52","สหภาพแรงงาน มติ","กรรมการสหภาพ ความคุ้มครอง"]}
+  ]},
+  {g:"คุ้มครองแรงงานเฉพาะกลุ่ม", items:[
+    {id:"discrimination", t:"เลือกปฏิบัติ ลูกจ้างหญิงและการคุกคาม", q:"เลิกจ้างเพราะตั้งครรภ์ เลือกปฏิบัติ หรือการล่วงเกินทางเพศในที่ทำงาน", law:"พ.ร.บ.คุ้มครองแรงงาน ม.15, ม.16, ม.43", kw:["ตั้งครรภ์ เลิกจ้าง","ล่วงเกินทางเพศ ลูกจ้าง","เลือกปฏิบัติ ค่าจ้าง"]},
+    {id:"leave-holiday", t:"วันหยุด วันลา และวันหยุดพักผ่อนประจำปี", q:"สิทธิวันหยุดพักผ่อนสะสม ค่าจ้างวันลาป่วย และการลาที่ไม่ได้รับอนุมัติ", law:"พ.ร.บ.คุ้มครองแรงงาน ม.30, ม.32, ม.57, ม.67", kw:["วันหยุดพักผ่อนประจำปี สะสม","ลาป่วย ค่าจ้าง","ลา ไม่ได้รับอนุญาต ขาดงาน"]}
+  ]},
+  {g:"ความรับผิดของลูกจ้าง", items:[
+    {id:"el-tort", t:"ลูกจ้างทำละเมิดหรือทำให้นายจ้างเสียหาย", q:"ลูกจ้างประมาทหรือจงใจทำให้ทรัพย์สินหรือเงินของนายจ้างเสียหาย ต้องชดใช้เท่าใด", law:"ป.พ.พ. ม.420, ม.438", kw:["ลูกจ้าง ละเมิด ชดใช้ นายจ้าง","ประมาทเลินเล่อ ลูกจ้าง ค่าเสียหาย","ลูกจ้าง ทำให้ทรัพย์สิน เสียหาย"]},
+    {id:"el-money", t:"ลูกจ้างต้องคืนเงิน", q:"ยักยอก เงินทดรอง เงินที่รับไปโดยไม่มีสิทธิ เงินกู้สวัสดิการ หรือหนี้ที่รับสภาพไว้", law:"ป.พ.พ. ม.406, ม.653", kw:["ลูกจ้าง ยักยอก คืนเงิน","เงินทดรองจ่าย ลูกจ้าง","รับสภาพหนี้ ลูกจ้าง"]},
+    {id:"el-training", t:"ทุนการศึกษาและสัญญาผูกมัดการทำงาน", q:"ลูกจ้างลาออกก่อนครบกำหนดตามสัญญาทุนหรือสัญญาฝึกอบรมต้องชดใช้เท่าใด ศาลลดเบี้ยปรับได้หรือไม่", law:"ป.พ.พ. ม.379, ม.383", kw:["ทุนการศึกษา ผิดสัญญา ลูกจ้าง","ฝึกอบรม ผูกมัด ทำงาน ชดใช้","เบี้ยปรับ สูงเกินส่วน ลูกจ้าง"]},
+    {id:"el-guarantee", t:"ผู้ค้ำประกันการทำงานและหลักประกัน", q:"ผู้ค้ำประกันลูกจ้างต้องรับผิดเพียงใด และนายจ้างเรียกหลักประกันการทำงานได้แค่ไหน", law:"ป.พ.พ. ม.680 / พ.ร.บ.คุ้มครองแรงงาน ม.10", kw:["ค้ำประกัน การทำงาน ลูกจ้าง","ผู้ค้ำประกัน รับผิด ลูกจ้าง","หลักประกันการทำงาน"]},
+    {id:"employee-liability", t:"ไล่เบี้ยและความรับผิดอื่นของลูกจ้าง", q:"นายจ้างรับผิดต่อบุคคลภายนอกแทนลูกจ้างแล้วไล่เบี้ยได้หรือไม่ และความรับผิดอื่นของลูกจ้าง", law:"ป.พ.พ. ม.425, ม.426", kw:["นายจ้างไล่เบี้ย ลูกจ้าง","มาตรา 425 ลูกจ้าง","มาตรา 426 ไล่เบี้ย"]},
+    {id:"non-compete", t:"ข้อห้ามทำงานกับคู่แข่งและความลับทางการค้า", q:"สัญญาห้ามลูกจ้างไปทำงานกับคู่แข่งใช้บังคับได้แค่ไหน", law:"พ.ร.บ.ข้อสัญญาที่ไม่เป็นธรรม ม.5", kw:["ห้ามทำงาน คู่แข่ง สัญญา","ความลับทางการค้า ลูกจ้าง","ข้อสัญญาที่ไม่เป็นธรรม ลูกจ้าง"]}
+  ]},
+  {g:"กองทุน ประกันสังคม เงินทดแทน", items:[
+    {id:"provident", t:"กองทุนสำรองเลี้ยงชีพและเงินสะสม", q:"ลูกจ้างถูกเลิกจ้างโดยมีความผิด นายจ้างริบเงินสมทบได้หรือไม่", law:"พ.ร.บ.กองทุนสำรองเลี้ยงชีพ พ.ศ. 2530 และข้อบังคับกองทุน", kw:["กองทุนสำรองเลี้ยงชีพ เงินสมทบ ริบ","เงินสะสม เลิกจ้าง","ข้อบังคับกองทุน ลูกจ้าง"]},
+    {id:"compensation-ss", t:"เงินทดแทนและประกันสังคม", q:"เจ็บป่วยหรือประสบอันตรายเนื่องจากการทำงาน การอุทธรณ์คำสั่งสำนักงานประกันสังคม", law:"พ.ร.บ.เงินทดแทน ม.5 / พ.ร.บ.ประกันสังคม ม.85", kw:["ประสบอันตราย เนื่องจากการทำงาน","เพิกถอนคำวินิจฉัย คณะกรรมการอุทธรณ์","เงินทดแทน เจ็บป่วย"]}
+  ]},
+  {g:"กระบวนพิจารณาคดีแรงงาน", items:[
+    {id:"jurisdiction", t:"อำนาจศาลแรงงาน", q:"ข้อพิพาทแบบใดเป็นคดีแรงงาน ฟ้องผิดศาลแล้วเป็นอย่างไร คำวินิจฉัยว่าคดีอยู่ในอำนาจศาลแรงงานหรือไม่", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.8", kw:["อำนาจศาลแรงงาน มาตรา 8","คดีแรงงาน สัญญาจ้างแรงงาน อำนาจศาล","ทุนการศึกษา ศาลแรงงาน"]},
+    {id:"complaint", t:"คำฟ้อง อำนาจฟ้อง และคู่ความ", q:"คำฟ้องแบบใดเคลือบคลุม ใครมีอำนาจฟ้อง ต้องฟ้องใครเป็นจำเลย เรียกผู้อื่นเข้ามาในคดีได้หรือไม่", law:"ป.วิ.พ. ม.55, ม.172 (ใช้โดยอนุโลมตาม พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.31)", kw:["ฟ้องเคลือบคลุม คดีแรงงาน","อำนาจฟ้อง ลูกจ้าง","จำเลยร่วม คดีแรงงาน"]},
+    {id:"res-judicata", t:"ฟ้องซ้ำ ฟ้องซ้อน และดำเนินกระบวนพิจารณาซ้ำ", q:"เคยฟ้องหรือเคยมีคำพิพากษาในเรื่องเดียวกันแล้ว ฟ้องใหม่ได้หรือไม่", law:"ป.วิ.พ. ม.144, ม.148, ม.173", kw:["ฟ้องซ้ำ คดีแรงงาน","ฟ้องซ้อน คดีแรงงาน","ดำเนินกระบวนพิจารณาซ้ำ"]},
+    {id:"trial-powers", t:"วิธีพิจารณาของศาลแรงงาน", q:"ศาลแรงงานพิพากษาเกินคำขอได้เมื่อใด เรียกพยานเองหรืองดสืบพยานได้แค่ไหน การไกล่เกลี่ยและการกำหนดประเด็น", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.31, ม.45, ม.52", kw:["พิพากษาเกินคำขอ มาตรา 52","ศาลแรงงาน เรียกพยาน มาตรา 45","งดสืบพยาน คดีแรงงาน"]},
+    {id:"evidence", t:"พยานหลักฐานและภาระการพิสูจน์", q:"ใครมีภาระพิสูจน์ พยานบอกเล่าหรือเอกสารแบบใดรับฟังได้", law:"ป.วิ.พ. ม.84/1, ม.95/1 (ใช้โดยอนุโลม)", kw:["ภาระการพิสูจน์ คดีแรงงาน","พยานบอกเล่า คดีแรงงาน","รับฟังพยานหลักฐาน ศาลแรงงาน"]},
+    {id:"settlement", t:"ประนีประนอมยอมความ ถอนฟ้อง และสละสิทธิ", q:"ลูกจ้างทำบันทึกตกลง หนังสือสละสิทธิ หรือถอนฟ้องแล้ว เรียกร้องต่อได้หรือไม่", law:"ป.พ.พ. ม.850, ม.852", kw:["สัญญาประนีประนอมยอมความ ลูกจ้าง","สละสิทธิเรียกร้อง ค่าชดเชย","ถอนฟ้อง คดีแรงงาน"]},
+    {id:"default-retrial", t:"ขาดนัด พิจารณาใหม่ และการส่งหมาย", q:"คู่ความไม่มาศาลหรือขาดนัด ขอพิจารณาใหม่ได้หรือไม่ การส่งหมายและคำคู่ความชอบหรือไม่", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ และ ป.วิ.พ. หมวดขาดนัดและการพิจารณาใหม่", kw:["ขาดนัด คดีแรงงาน","ขอพิจารณาใหม่ คดีแรงงาน","ส่งหมายเรียก คดีแรงงาน"]},
+    {id:"appeal", t:"อุทธรณ์ข้อเท็จจริงต้องห้าม", q:"อุทธรณ์แบบใดถือเป็นการโต้แย้งดุลพินิจรับฟังพยานของศาลแรงงาน ซึ่งศาลไม่รับวินิจฉัย", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.54 วรรคหนึ่ง", kw:["อุทธรณ์ข้อเท็จจริง ต้องห้าม มาตรา 54","โต้แย้งดุลพินิจในการรับฟังพยาน","ไม่รับวินิจฉัย อุทธรณ์ คดีแรงงาน"]},
+    {id:"appeal-other", t:"อุทธรณ์และฎีกาในประเด็นอื่น", q:"ข้อที่ไม่ได้ยกขึ้นว่ากันในศาลแรงงาน อุทธรณ์ไม่ชัดแจ้ง การขออนุญาตฎีกา และการย้อนสำนวน", law:"พ.ร.บ.จัดตั้งศาลแรงงานฯ ม.54, ม.57/1 / ป.วิ.พ. ม.225", kw:["มิได้ยกขึ้นว่ากันมาแล้วในศาลชั้นต้น คดีแรงงาน","ขออนุญาตฎีกา คดีแรงงาน","ย้อนสำนวน ศาลแรงงาน"]},
+    {id:"inspector-order", t:"คำสั่งพนักงานตรวจแรงงาน: ขั้นตอนและกำหนดเวลา", q:"ยื่นคำร้องต่อพนักงานตรวจแรงงานแล้วฟ้องศาลได้หรือไม่ ต้องฟ้องเพิกถอนภายในเมื่อใด ต้องวางเงินหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.123, ม.124, ม.125", kw:["คำสั่งพนักงานตรวจแรงงาน เป็นที่สุด","มาตรา 125 สามสิบวัน","เลือกใช้สิทธิ พนักงานตรวจแรงงาน ศาล"]},
+    {id:"inspector-route", t:"ฟ้องเพิกถอนคำสั่งพนักงานตรวจแรงงาน (วินิจฉัยสิทธิ)", q:"คดีที่นายจ้างหรือลูกจ้างฟ้องเพิกถอนคำสั่ง และศาลวินิจฉัยว่าลูกจ้างมีสิทธิได้เงินตามคำสั่งหรือไม่", law:"พ.ร.บ.คุ้มครองแรงงาน ม.124, ม.125", kw:["เพิกถอนคำสั่งพนักงานตรวจแรงงาน ค่าชดเชย","เพิกถอนคำสั่งพนักงานตรวจแรงงาน ค่าจ้าง","คำสั่งพนักงานตรวจแรงงาน ชอบด้วยกฎหมาย"]},
+    {id:"limitation", t:"อายุความ", q:"ค่าจ้าง ค่าชดเชย ค่าเสียหาย มีอายุความเท่าใด เริ่มนับเมื่อใด", law:"ป.พ.พ. ม.193/30, ม.193/34 (9)", kw:["อายุความ ค่าชดเชย","อายุความ ค่าจ้าง สองปี","อายุความ สิบปี เลิกจ้าง"]},
+    {id:"enforcement", t:"การวางเงิน บังคับคดี และล้มละลาย", q:"เงินที่วางศาลคืนได้เมื่อใด การบังคับคดีลูกหนี้นายจ้าง และสิทธิลูกจ้างเมื่อนายจ้างล้มละลายหรือฟื้นฟูกิจการ", law:"ป.วิ.พ. ภาคบังคับคดี / พ.ร.บ.ล้มละลาย พ.ศ. 2483", kw:["วางเงิน ศาลแรงงาน คืนเงิน","บังคับคดี คดีแรงงาน","ล้มละลาย ค่าชดเชย ลูกจ้าง"]}
+  ]}
+];
+var COURTS = {sc:"ศาลฎีกา", spc:"ศาลอุทธรณ์คดีชำนัญพิเศษ", lc:"ศาลแรงงาน"};
+function courtLabel(c){ return c.kind==="วร" ? "คำวินิจฉัยประธานศาลอุทธรณ์คดีชำนัญพิเศษ" : (COURTS[c.court]||c.court); }
+function numLabel(c){ return (c.court==="spc" && (c.kind==="ร"||c.kind==="วร") ? c.kind+" " : "") + c.number; }
+var HCACHE = (typeof WeakMap!=="undefined") ? new WeakMap() : null;
+var ISSUE = {}; TAX.forEach(function(g,gi){ g.items.forEach(function(i){ i.group=g.g; i.gi=gi; ISSUE[i.id]=i; }); });
+var ICONS = ["<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><circle cx=\"9\" cy=\"11\" r=\"2\"/><path d=\"M6 16c1-1.5 5-1.5 6 0M14 10h4M14 14h4\"/>", "<ellipse cx=\"9\" cy=\"7\" rx=\"6\" ry=\"3\"/><path d=\"M3 7v4c0 1.7 2.7 3 6 3s6-1.3 6-3V7\"/><path d=\"M9 14v3c0 1.7 2.7 3 6 3s6-1.3 6-3v-4c0-1.7-2.7-3-6-3\"/>", "<path d=\"M4 8h15l-4-4M20 16H5l4 4\"/>", "<path d=\"M12 3 2 20h20L12 3z\"/><path d=\"M12 10v4M12 17h.01\"/>", "<path d=\"M14 4H6v16h8\"/><path d=\"M10 12h11M18 9l3 3-3 3\"/>", "<path d=\"M12 4v16M8 20h8M5 7h14\"/><path d=\"M5 7l-3 7a3 3 0 0 0 6 0L5 7zM19 7l-3 7a3 3 0 0 0 6 0l-3-7z\"/>", "<circle cx=\"8\" cy=\"8\" r=\"3\"/><circle cx=\"16\" cy=\"8\" r=\"3\"/><path d=\"M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.1c.3 0 .7-.1 1-.1 3.3 0 6 2.7 6 6\"/>", "<path d=\"M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z\"/><path d=\"m9 12 2 2 4-4\"/>", "<rect x=\"3\" y=\"6\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"M3 10h18M16 15h2\"/>", "<path d=\"M3 12a9 9 0 0 1 18 0H3z\"/><path d=\"M12 12v6a2 2 0 0 0 4 0\"/>", "<path d=\"M13 4l7 7M9 8l7 7M11 6l-4 4M18 13l-4 4M10.5 12.5 3 20\"/>"];
+function gico(gi,lg){ return '<span class="gico g'+gi+(lg?' lg':'')+'" aria-hidden="true"><svg viewBox="0 0 24 24">'+ICONS[gi]+'</svg></span>'; }
+var QUICK = ["unfair-dismissal","sev-dishonest","sev-rules-serious","sev-abandon","resign-or-dismiss","transfer-job","overtime","union","temporary-closure","inspector-order"];
+var BOOKS={"2555-1":"ปี 2555 เล่มที่ 1","2555-2":"ปี 2555 เล่มที่ 2","2555-3":"ปี 2555 เล่มที่ 3","2556-1":"ปี 2556 เล่มที่ 1","2556-2":"ปี 2556 เล่มที่ 2","2556-3":"ปี 2556 เล่มที่ 3","2557-1":"ปี 2557 เล่มที่ 1","2557-2":"ปี 2557 เล่มที่ 2","2558":"ปี 2558","2559":"ปี 2559","2560":"ปี 2560","2561-1":"ปี 2561 เล่มที่ 1","2561-3":"ปี 2561 เล่มที่ 3 (คำพิพากษาปี 2562)","2563":"ปี 2563","2564":"ปี 2564","2565":"ปี 2565","2566":"ปี 2566","2567":"ปี 2567"};
+function bookLabel(k){ var id=String(k.b||k.y); if(id.indexOf("m-")===0) return "ประจำเดือน (เอกสารคำพิพากษาฉบับเต็ม)"; return BOOKS[id]||("ปี "+id); }
+function kssrUrl(k){ return "pdf/kssr-"+(k.b||k.y)+".pdf#page="+k.p; }
+
+/* ---------- สถานะ ---------- */
+var data = {updated:"", cases:[]};
+var state = {issue:"", group:null, q:"", court:"", editing:null, readOnly:false, confirmDel:null};
+var art = null;
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];}); }
+function yearOf(c){ var m=String(c.number||"").match(/\/(\d{4})\s*$/); return m?+m[1]:0; }
+function safeUrl(u){ return (/^https?:\/\//i.test(u||"") || /^pdf\/kssr-[\w-]+\.pdf(#page=\d+)?$/.test(u||"")) ? u : ""; }
+function toast(t){ var d=document.createElement("div"); d.className="toast"; d.textContent=t; document.body.appendChild(d); setTimeout(function(){ d.remove(); },2200); }
+
+function store(k,v){ try{ if(v==null) sessionStorage.removeItem(k); else sessionStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+function recall(k){ try{ var v=sessionStorage.getItem(k); return v?JSON.parse(v):null; }catch(e){ return null; } }
+
+/* ---------- ค้นหา ---------- */
+function norm(s){ return String(s||"").toLowerCase().replace(/มาตรา\s*/g,"ม.").replace(/ม\.\s*/g,"ม.").replace(/\s+/g," ").trim(); }
+function haystack(c){
+  if(HCACHE && HCACHE.has(c)) return HCACHE.get(c);
+  var iss=(c.issues||[]).map(function(id){ return ISSUE[id]?ISSUE[id].t+" "+ISSUE[id].group:""; }).join(" ");
+  var h=norm([numLabel(c), c.number, courtLabel(c), c.plenary?"ประชุมใหญ่":"", c.key?"สำนักงานคัดเลือก":"", c.laws, c.facts, c.holding, c.result, c.note, iss].join(" "));
+  if(HCACHE) HCACHE.set(c,h);
+  return h;
+}
+function qTerms(){ return norm(state.q).split(" ").filter(Boolean); }
+var RE_CACHE={q:null,re:null};
+function termRe(){
+  if(RE_CACHE.q===state.q) return RE_CACHE.re;
+  var parts=qTerms().filter(function(t){ return !/[&<>"']/.test(t); }).sort(function(a,b){ return b.length-a.length; }).map(function(t){
+    return t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/^ม\\\./,"(?:ม\\.\\s*|มาตรา\\s*)");
+  });
+  RE_CACHE={q:state.q, re: parts.length ? new RegExp("("+parts.join("|")+")","gi") : null};
+  return RE_CACHE.re;
+}
+function hl(s){ var e=esc(s), re=termRe(); return re ? e.replace(re,"<mark>$1</mark>") : e; }
+function issueText(c){ return (c.issues||[]).map(function(id){ return ISSUE[id]?ISSUE[id].t:""; }).join(" "); }
+var FIELDS=[["holding","หลักกฎหมาย",4],["issues","ประเด็นปัญหา",4],["laws","ตัวบทกฎหมาย",2],["facts","ข้อเท็จจริง",1],["result","ผลคดี",1],["number","เลขคดี",5]];
+function fieldText(c,f){ return f==="issues" ? issueText(c) : f==="number" ? numLabel(c)+" "+c.number : c[f]; }
+function occ(h,t){ var n=0,i=h.indexOf(t); while(i>=0){ n++; i=h.indexOf(t,i+t.length); } return n; }
+function score(c,terms){ var s=0; FIELDS.forEach(function(F){ var h=norm(fieldText(c,F[0])); terms.forEach(function(t){ s+=Math.min(occ(h,t),3)*F[2]; }); }); return s; }
+function foundIn(c){
+  var terms=qTerms(); if(!terms.length) return "";
+  var hit=FIELDS.filter(function(F){ var h=norm(fieldText(c,F[0])); return terms.some(function(t){ return h.indexOf(t)>=0; }); }).map(function(F){ return F[1]; });
+  return hit.length ? '<p class="foundin">พบคำค้นใน '+hit.map(function(x){ return '<span>'+x+'</span>'; }).join("")+'</p>' : "";
+}
+function filtered(){
+  var terms = qTerms();
+  var out = pool().filter(function(c){
+    if(state.issue && (c.issues||[]).indexOf(state.issue)<0) return false;
+    if(!state.issue && state.group!=null && !(c.issues||[]).some(function(x){ return ISSUE[x] && ISSUE[x].gi===state.group; })) return false;
+    if(state.court==="vr" && c.kind!=="วร") return false;
+    if(state.court==="spc" && (c.court!=="spc" || c.kind==="วร")) return false;
+    if(state.court==="sc" && c.court!=="sc") return false;
+    if(state.fullOnly==="1" && !safeUrl(c.full)) return false;
+    if(state.fullOnly==="key" && !(c.key||c.plenary)) return false;
+    if(!terms.length) return true;
+    var h=haystack(c); return terms.every(function(t){ return h.indexOf(t)>=0; });
+  });
+  if(terms.length){
+    var sc=new Map(); out.forEach(function(c){ sc.set(c,score(c,terms)); });
+    return out.sort(function(a,b){ return sc.get(b)-sc.get(a) || yearOf(b)-yearOf(a) || String(b.number).localeCompare(String(a.number)); });
+  }
+  return out.sort(function(a,b){ return yearOf(b)-yearOf(a) || String(b.number).localeCompare(String(a.number)); });
+}
+function pool(){ return state.fullOnly==="hidden" ? data.cases.filter(function(c){ return c.hidden; }) : data.cases.filter(function(c){ return !c.hidden; }); }
+function countFor(id){ return pool().filter(function(c){ return (c.issues||[]).indexOf(id)>=0; }).length; }
+
+/* ---------- วาดหน้า ---------- */
+function renderTree(){
+  $("allCount").textContent = pool().length;
+  $("allBtn").setAttribute("aria-current", state.issue===""?"true":"false");
+  var html = TAX.map(function(g,gi){
+    var open = g.items.some(function(i){ return i.id===state.issue; }) || openGroups[gi];
+    var ids = g.items.map(function(i){ return i.id; });
+    var n = pool().filter(function(c){ return (c.issues||[]).some(function(x){ return ids.indexOf(x)>=0; }); }).length;
+    return '<div class="group g'+gi+'"><button type="button" data-g="'+gi+'" aria-expanded="'+(open?"true":"false")+'"><span class="gname" style="display:flex;align-items:center;gap:10px">'+gico(gi)+'<span>'+esc(g.g)+'</span></span><span class="count">'+n+'</span></button>'+
+      '<ul'+(open?'':' hidden')+'>'+g.items.map(function(i){
+        return '<li><button class="issue" type="button" data-issue="'+i.id+'" aria-current="'+(state.issue===i.id?"true":"false")+'"><span>'+esc(i.t)+'</span><span class="count">'+countFor(i.id)+'</span></button></li>';
+      }).join("")+'</ul></div>';
+  }).join("");
+  $("groups").innerHTML = html;
+  $("treeToggleLabel").textContent = state.issue ? ISSUE[state.issue].t : "เลือกประเด็นปัญหา";
+}
+var openGroups = {};
+
+function renderPanel(){
+  var p=$("panel");
+  if(!state.issue){ p.hidden=false; if(state.group!=null){ p.className="panel"; p.innerHTML=groupPanel(state.group); } else { p.hidden=true; p.innerHTML=""; } return; }
+  p.className="panel";
+  var i=ISSUE[state.issue];
+  p.hidden=false;
+  p.innerHTML =
+    '<div class="pgroup">'+gico(i.gi)+'<button type="button" class="linkbtn" data-gsel="'+i.gi+'">'+esc(i.group)+'</button></div>'+
+    '<h2>'+esc(i.t)+'</h2>'+
+    '<p class="q">'+esc(i.q)+'</p>'+
+    '<dl class="kv"><dt>บทบัญญัติที่เกี่ยวข้อง</dt><dd>'+esc(i.law)+'</dd></dl>'+
+    '<div><div class="kwlabel">คำค้นแนะนำสำหรับระบบศาลฎีกา แตะเพื่อคัดลอก</div><div class="kw">'+
+      i.kw.map(function(k){ return '<button type="button" class="kwbtn" data-kw="'+esc(k)+'">'+esc(k)+'</button>'; }).join("")+
+    '</div></div>'+
+    '<p class="hint">คัดลอกคำค้นแล้วเปิด <a href="https://deka.supremecourt.or.th/" target="_blank" rel="noopener">deka.supremecourt.or.th</a> วางในช่องค้น ระบบศาลไม่อนุญาตให้ค้นข้ามมาจากหน้านี้โดยตรง</p>';
+}
+
+function groupCount(gi){ return pool().filter(function(c){ return (c.issues||[]).some(function(x){ return ISSUE[x] && ISSUE[x].gi===gi; }); }).length; }
+function overview(){
+  var counts=TAX.map(function(g,gi){ return groupCount(gi); }), mx=Math.max.apply(null,counts.concat([1]));
+  var bars=TAX.map(function(g,gi){
+    return '<button type="button" class="barrow g'+gi+'" data-gsel="'+gi+'">'+gico(gi)+'<span class="bn">'+esc(g.g)+'</span><span class="track"><span class="fill" style="width:'+(counts[gi]/mx*100).toFixed(1)+'%"></span></span><span class="bc">'+counts[gi]+'</span></button>';
+  }).join("");
+  var ys={}; data.cases.forEach(function(c){ var y=yearOf(c); if(y) ys[y]=(ys[y]||0)+1; });
+  var yrs=Object.keys(ys).map(Number).sort(); var chart="";
+  if(yrs.length){
+    var y0=Math.max(yrs[0], yrs[yrs.length-1]-24), y1=yrs[yrs.length-1], ymx=0, older=0, peak=y0;
+    yrs.forEach(function(y){ if(y<y0) older+=ys[y]; else if(ys[y]>ymx){ ymx=ys[y]; peak=y; } });
+    var cols="", labs="";
+    for(var y=y0;y<=y1;y++){ var n=ys[y]||0;
+      cols+='<span'+(y===peak?' class="peak"':'')+' data-n="'+n+'" data-y="'+y+'" style="height:'+(n/ymx*100).toFixed(1)+'%" title="ปี '+y+' · '+n+' คำพิพากษา"></span>';
+      labs+='<span>'+((y-y0)%5===0||y===y1?String(y).slice(2):"")+'</span>'; }
+    chart='<div><h3 class="ovh" style="font-size:19px">คำพิพากษาตามปีที่ตัดสิน</h3><p class="ovsub">พ.ศ. '+y0+'–'+y1+(older?' (ก่อนหน้านั้นอีก '+older+' รายการ)':'')+' แตะแท่งเพื่อดูจำนวน</p>'+
+      '<div class="yc" id="yc">'+cols+'</div><div class="ycl" aria-hidden="true">'+labs+'</div><div class="ytip" id="ytip">ปีที่มีมากที่สุดคือ '+peak+' จำนวน '+ymx+' คำพิพากษา</div></div>';
+  }
+  return '<div class="ovgrid"><div><h2 class="ovh">คลังนี้มีเรื่องอะไรบ้าง</h2><p class="ovsub">จำนวนคำพิพากษาในแต่ละหมวด แตะหมวดเพื่อดูคำพิพากษาในหมวดนั้น</p><div class="bars">'+bars+'</div></div>'+chart+'</div>';
+}
+function groupPanel(gi){
+  var g=TAX[gi];
+  return '<div class="ghead">'+gico(gi,true)+'<div><div class="pgroup">หมวด · '+groupCount(gi)+' คำพิพากษา</div><h2>'+esc(g.g)+'</h2></div></div>'+
+    '<p class="q">เลือกประเด็นย่อยเพื่ออ่านคำถามหลัก บทบัญญัติ และคำค้นแนะนำของประเด็นนั้น</p>'+
+    '<div class="issuebtns g'+gi+'">'+g.items.map(function(i){ return '<button type="button" class="issuebtn" data-issue="'+i.id+'">'+esc(i.t)+'<b>'+countFor(i.id)+'</b></button>'; }).join("")+'</div>'+
+    '<p class="hint"><button type="button" class="linkbtn" data-act="ov">กลับไปดูภาพรวมทุกหมวด</button></p>';
+}
+function caseCard(c){
+  var y=yearOf(c);
+  var src = safeUrl(c.url);
+  var del = state.confirmDel===c.id;
+  return '<article class="case" id="case-'+esc(c.id)+'">'+
+    '<div class="case-head">'+((c.issues||[]).length&&ISSUE[c.issues[0]]?gico(ISSUE[c.issues[0]].gi):'')+'<span class="redno">'+hl(numLabel(c))+'</span><span class="court">'+esc(courtLabel(c))+'</span>'+
+      (c.plenary?'<span class="chip plenary">ประชุมใหญ่</span>':'')+
+      (c.key?'<span class="chip key">สำนักงานคัดเลือก</span>':'')+
+      (c.status==="verified"?'<span class="chip verified">ทนายตรวจทานแล้ว</span>':
+        (c.checked==="sjapsc"?'<span class="chip checked">สำนักงานสรุปจากย่อข้อกฎหมายของศาล</span>':c.checked==="kssr"?'<span class="chip checked">สำนักงานสรุปจากเอกสารของ กสร.</span>':(c.checked?'<span class="chip checked">สำนักงานสรุปจากคำพิพากษาฉบับเต็ม</span>':'')))+'</div>'+
+    foundIn(c)+
+    (c.holding?'<p class="holding">'+hl(c.holding)+'</p>':'<p class="holding pendingtext">ยังไม่ได้สรุปหลักกฎหมาย เปิดอ่านย่อข้อกฎหมายฉบับทางการของศาลได้ที่ปุ่มด้านล่าง</p>')+
+    
+    (c.facts?'<p class="facts"><b>ข้อเท็จจริงโดยย่อ</b> '+hl(c.facts)+'</p>':'')+
+    '<div class="meta">'+
+      (c.laws?'<span><b>กฎหมาย</b> '+hl(c.laws)+'</span>':'')+
+      (c.result?'<span><b>ผลคดี</b> '+hl(c.result)+'</span>':'')+
+      (y?'<span><b>ปี</b> '+y+'</span>':'')+
+    '</div>'+
+    '<div class="tags">'+(c.issues||[]).filter(function(id){return ISSUE[id];}).map(function(id){ return '<button type="button" class="tag g'+ISSUE[id].gi+'" data-issue="'+id+'">'+hl(ISSUE[id].t)+'</button>'; }).join("")+'</div>'+
+    fullRow(c)+
+    '<div class="citerow"><button type="button" class="btn ghost cite" data-cite="'+esc(c.id)+'">คัดลอกไปใช้อ้างอิง</button></div>'+
+    '<div class="meta"><span><b>ที่มา</b> '+(src?'<a href="'+esc(src)+'" target="_blank" rel="noopener">'+esc(c.source||src)+'</a>':esc(c.source||"ไม่ระบุ"))+'</span>'+(c.note?'<span><b>หมายเหตุ</b> '+esc(c.note)+'</span>':'')+'</div>'+
+    ((art && !state.readOnly)?
+      (del?'<div class="confirm"><span>ลบ '+esc(c.number)+' ออกจากคลัง?</span><button class="btn danger" type="button" data-act="del-yes" data-id="'+esc(c.id)+'">ลบ</button><button class="btn ghost" type="button" data-act="del-no">ยกเลิก</button></div>'
+           :'<div class="case-actions"><button class="linkbtn" type="button" data-act="edit" data-id="'+esc(c.id)+'">แก้ไข</button><button class="linkbtn" type="button" data-act="del" data-id="'+esc(c.id)+'">ลบ</button></div>')
+      :'')+
+  '</article>';
+}
+
+function hostOf(u){ if(/^pdf\//.test(String(u))) return "kssr"; var m=String(u).match(/^https?:\/\/([^\/]+)/i); return m?m[1].replace(/^www\./,""):""; }
+function fullRow(c){
+  var f=safeUrl(c.full), h="";
+  if(f){
+    var label = c.fullKind==="short" ? "อ่านคำพิพากษา (มีเฉพาะย่อสั้น)" : c.fullKind==="official" ? "อ่านย่อสั้นและย่อยาวของศาล" : c.fullKind==="kssr" ? (c.kssr && String(c.kssr.b).indexOf("m-")===0 ? "อ่านคำพิพากษาฉบับเต็ม (เอกสาร กสร.)" : "เปิดหนังสือ กสร. หน้า "+(c.kssr?c.kssr.p:"")) : "อ่านคำพิพากษาฉบับเต็ม";
+    var host = hostOf(f);
+    var srcText = host==="deka.in.th" ? "จาก ThaiDeka (deka.in.th) เว็บไซต์เอกชนที่เผยแพร่คำพิพากษาศาลฎีกา ไม่ใช่ระบบของศาล"
+      : host==="sjapsc.coj.go.th" ? "จากระบบสืบค้นย่อข้อกฎหมายของศาลอุทธรณ์คดีชำนัญพิเศษ (แหล่งทางการ)"
+      : host==="kssr" ? "สรุปคำพิพากษาคดีแรงงาน "+(c.kssr?bookLabel(c.kssr):"")+" ของกองนิติการ กรมสวัสดิการและคุ้มครองแรงงาน (หน้าตามไฟล์ PDF)" : "จาก "+esc(host);
+    h += '<a class="btn fullbtn" href="'+esc(f)+'" target="_blank" rel="noopener">'+label+' ↗</a>'+
+         '<span class="fullsrc">'+srcText+'</span>';
+  } else if(c.court==="sc"){
+    h += '<span class="fullsrc">ยังไม่พบฉบับเต็มที่เปิดอ่านได้ทางออนไลน์ ค้นในระบบของศาลฎีกาด้วยเลขฎีกา</span>';
+  } else {
+    h += '<span class="fullsrc">ฉบับเต็มของศาลนี้ยังไม่มีแหล่งเปิดอ่านออนไลน์ที่ตรวจสอบได้ ขอคัดสำเนาได้จากศาล</span>';
+  }
+  if(c.kssr && c.fullKind!=="kssr"){
+    h += '<span class="officialrow">อ่านประกอบ <a href="'+esc(kssrUrl(c.kssr))+'" target="_blank" rel="noopener">สรุปคำพิพากษาของ กสร. '+bookLabel(c.kssr)+' หน้า '+c.kssr.p+'</a></span>';
+  }
+  if(c.court==="sc"){
+    h += '<span class="officialrow"><button type="button" class="linkbtn" data-kw="'+esc(c.number)+'">คัดลอกเลขฎีกา '+esc(c.number)+'</button> แล้วค้นใน <a href="https://deka.supremecourt.or.th/" target="_blank" rel="noopener">ระบบสืบค้นของศาลฎีกา</a></span>';
+  }
+  return '<div class="fullrow">'+h+'</div>';
+}
+function renderList(){
+  var list = filtered();
+  var t = state.issue ? ISSUE[state.issue].t : state.group!=null ? "หมวด"+TAX[state.group].g : "คำพิพากษาทั้งหมด";
+  var fN=function(n){ return Number(n).toLocaleString("th-TH"); };
+  var qs=String(state.q||"").trim();
+  $("listTitle").textContent = qs ? ("ผลการค้น “"+qs+"”"+(state.issue||state.group!=null ? " ใน"+t : "")+" · "+fN(list.length)+" รายการ") : (t + " · " + fN(list.length) + " รายการ");
+  $("qbar").innerHTML = qs ? '<div class="qbar"><div>ค้นคำว่า <span class="qterm">'+esc(qs)+'</span> '+(list.length ? 'พบ <b>'+fN(list.length)+'</b> คำพิพากษา<span class="sub">เรียงเรื่องที่คำค้นอยู่ในหลักกฎหมายและประเด็นปัญหาไว้ก่อน คำที่ค้นจะมีแถบสีเหลืองในแต่ละเรื่อง</span>' : '<b>ไม่พบ</b>คำพิพากษาที่ตรงกัน')+'</div><button type="button" class="btn ghost" data-act="clearq">ล้างคำค้น</button></div>' : "";
+  $("addBtn").hidden = true;
+  if(!list.length){
+    var adv = state.issue ? "ยังไม่มีคำพิพากษาในประเด็นนี้ ใช้คำค้นแนะนำด้านบนค้นในระบบศาลฎีกา แล้วเพิ่มรายการที่ใช้ได้เข้าคลัง" :
+      (state.q||state.court) ? "ไม่พบรายการที่ตรงกับคำค้น ลองใช้คำที่สั้นลง หรือเลือกดูตามประเด็นปัญหาทางซ้าย" : "คลังยังว่าง เริ่มจากเลือกประเด็นปัญหาทางซ้ายเพื่อดูคำค้นแนะนำ";
+    $("cases").innerHTML = '<div class="empty"><p>'+esc(adv)+'</p></div>';
+  } else {
+    var sig = [state.issue,state.group,state.q,state.court,state.fullOnly].join("|");
+    if(sig!==state.sig){ state.sig=sig; state.limit=40; }
+    var shown = list.slice(0, state.limit||40);
+    $("cases").innerHTML = shown.map(caseCard).join("") +
+      (list.length>shown.length ? '<button type="button" class="btn ghost more" data-act="more">แสดงเพิ่มอีก '+Math.min(40,list.length-shown.length)+' รายการ (เหลือ '+(list.length-shown.length)+')</button>' : '');
+  }
+  var pub = data.cases.filter(function(c){ return !c.hidden; });
+  var nsc = pub.filter(function(c){ return c.court==="sc"; }).length, nspc = pub.length - nsc;
+  var f=function(n){ return Number(n).toLocaleString("th-TH"); };
+  $("stats").innerHTML = '<span><b>'+f(pub.length)+'</b> คำพิพากษา</span><span>ศาลฎีกา <b>'+f(nsc)+'</b></span><span>ศาลอุทธรณ์คดีชำนัญพิเศษ <b>'+f(nspc)+'</b></span>' + (data.updated ? '<span>ปรับปรุง '+esc(thaiDate(data.updated))+'</span>' : '');
+}
+function thaiDate(iso){
+  var m=String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!m) return iso;
+  var mon=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+  return (+m[3])+" "+mon[+m[2]-1]+" "+((+m[1]+543)%100);
+}
+function renderQuick(){
+  var q=$("quick"); if(q.dataset.done) return; q.dataset.done="1";
+  q.insertAdjacentHTML("beforeend", QUICK.map(function(id){ return '<button type="button" class="qbtn" data-issue="'+id+'">'+esc(ISSUE[id].t)+'</button>'; }).join(""));
+}
+/* ---------- ค้นด้วยเลขคดี ---------- */
+var SJ_SEARCH = "https://sjapsc.coj.go.th/sjapsc/?keyword=";
+var SJ_TAIL = "&doc_type_name=&department_name=%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%81%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%81%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99&year_from=2556&year_to=2569";
+function parseNum(s){
+  s=String(s||"").replace(/[๐-๙]/g,function(d){ return "๐๑๒๓๔๕๖๗๘๙".indexOf(d); }).replace(/[–—]/g,"-");
+  var m=s.match(/(\d{1,6})\s*(?:-\s*(\d{1,6}))?\s*\/\s*(\d{4})/); if(!m) return null;
+  var y=+m[3]; if(y>1900 && y<2200) y+=543;
+  return {a:+m[1], b:m[2]?+m[2]:null, y:y, text:m[1]+(m[2]?"-"+m[2]:"")+"/"+y};
+}
+function findInDb(n, court){
+  return data.cases.filter(function(c){
+    if(c.hidden) return false;
+    if(court && c.court!==court) return false;
+    var m=String(c.number).match(/^(\d+)(?:-(\d+))?\/(\d{4})$/); if(!m || +m[3]!==n.y) return false;
+    var a=+m[1], b=m[2]?+m[2]:a;
+    return n.a>=a && n.a<=b;
+  });
+}
+function lookup(){
+  var out=$("lkout"), n=parseNum($("lknum").value), court=$("lkcourt").value;
+  if(!n){ out.innerHTML='<p class="lknote">ใส่เลขคดีในรูปแบบ เลข/ปี พ.ศ. เช่น 1234/2565</p>'; return; }
+  var courts = court ? [court] : ["sc","spc"], html="";
+  courts.forEach(function(ct){
+    var hits=findInDb(n, ct), links="";
+    hits.forEach(function(c){ links+='<button type="button" class="lkbtn in" data-goto="'+esc(c.id)+'">เปิดในคลังนี้ '+esc(numLabel(c))+'</button>'; });
+    if(ct==="sc"){
+      links+='<a class="lkbtn" href="https://deka.in.th/deka/'+n.y+'-'+n.a+'" target="_blank" rel="noopener">ThaiDeka ฎีกาที่ '+n.a+'/'+n.y+' ↗</a>';
+      if(n.b) links+='<a class="lkbtn" href="https://deka.in.th/deka/'+n.y+'-'+n.b+'" target="_blank" rel="noopener">ThaiDeka ฎีกาที่ '+n.b+'/'+n.y+' ↗</a>';
+      links+='<button type="button" class="lkbtn" data-kw="'+esc(n.text)+'">คัดลอกเลข '+esc(n.text)+'</button><a class="lkbtn" href="https://deka.supremecourt.or.th/" target="_blank" rel="noopener">ระบบของศาลฎีกา ↗</a>';
+    } else {
+      links+='<a class="lkbtn" href="'+SJ_SEARCH+encodeURIComponent(n.a+"/"+n.y)+SJ_TAIL+'" target="_blank" rel="noopener">ระบบย่อข้อกฎหมายของศาล ↗</a>';
+    }
+    links+='<a class="lkbtn" href="https://www.google.com/search?q='+encodeURIComponent('"'+(ct==="sc"?"คำพิพากษาศาลฎีกาที่ ":"คำพิพากษาศาลอุทธรณ์คดีชำนัญพิเศษที่ ")+n.text+'"')+'" target="_blank" rel="noopener">ค้นทั่วเว็บ ↗</a>';
+    var note = ct==="sc"
+      ? "ThaiDeka เปิดหน้าตามเลขคดีโดยตรง ถ้าขึ้นว่าไม่พบ แปลว่ายังไม่มีในเว็บนั้น ส่วนระบบของศาลฎีกาไม่รับลิงก์จากภายนอก ให้คัดลอกเลขแล้ววางในช่องค้น"
+      : "ระบบของศาลเผยแพร่เฉพาะคำพิพากษาที่ศาลคัดเลือก ถ้าไม่พบ ให้ขอคัดสำเนาจากศาล หรือดูในหนังสือสรุปคำพิพากษาของ กสร. ท้ายหน้านี้";
+    html+='<div class="lkgroup"><h3>'+(ct==="sc"?"ศาลฎีกา":"ศาลอุทธรณ์คดีชำนัญพิเศษ")+' · '+esc(n.text)+(hits.length?' <span class="chip verified">มีในคลังนี้</span>':' <span class="chip checked">ยังไม่มีในคลังนี้</span>')+'</h3><div class="lklinks">'+links+'</div><p class="lknote">'+note+'</p></div>';
+  });
+  out.innerHTML=html;
+}
+function gotoCase(id){
+  var c=data.cases.find(function(x){ return x.id===id; }); if(!c) return;
+  state.issue=""; state.group=null; state.court=""; state.fullOnly=""; $("court").value=""; $("fullf").value="";
+  state.q=c.number; $("q").value=c.number; render();
+  var el=document.getElementById("case-"+id); if(el) el.scrollIntoView({block:"start",behavior:"smooth"});
+}
+function render(){ renderQuick(); renderTree(); renderPanel(); renderList(); renderEditor(); }
+
+/* ---------- ฟอร์มเพิ่ม/แก้ไข ---------- */
+function blank(){ return {id:"", court:"sc", number:"", issues: state.issue?[state.issue]:[], laws:"", facts:"", holding:"", result:"", source:"", url:"", status:"pending", note:""}; }
+function renderEditor(){
+  var slot=$("editorSlot");
+  if(!state.editing){ slot.innerHTML=""; return; }
+  var e=state.editing;
+  var picks = TAX.map(function(g){
+    return '<div class="g">'+esc(g.g)+'</div>'+g.items.map(function(i){
+      return '<label><input type="checkbox" name="iss" value="'+i.id+'"'+((e.issues||[]).indexOf(i.id)>=0?' checked':'')+'> '+esc(i.t)+'</label>';
+    }).join("");
+  }).join("");
+  slot.innerHTML =
+  '<form class="editor" id="ed" novalidate>'+
+    '<h3>'+(e.id?"แก้ไข "+esc(e.number):"เพิ่มคำพิพากษา")+'</h3>'+
+    '<div class="fields">'+
+      '<div class="field"><label for="f-court">ศาล</label><select id="f-court">'+
+        Object.keys(COURTS).map(function(k){ return '<option value="'+k+'"'+(e.court===k?' selected':'')+'>'+COURTS[k]+'</option>'; }).join("")+'</select></div>'+
+      '<div class="field"><label for="f-number">เลขคำพิพากษา</label><input id="f-number" value="'+esc(e.number)+'" placeholder="เช่น 1234/2565" inputmode="numeric"><small>รูปแบบ เลข/ปี พ.ศ.</small></div>'+
+      '<fieldset class="field full"><legend>ประเด็นปัญหา (เลือกได้มากกว่าหนึ่ง)</legend><div class="picks">'+picks+'</div></fieldset>'+
+      '<div class="field full"><label for="f-holding">หลักกฎหมายที่ศาลวาง</label><textarea id="f-holding" placeholder="สรุปด้วยถ้อยคำของเราเอง ไม่คัดลอกบทสรุปที่ผู้อื่นเรียบเรียง">'+esc(e.holding)+'</textarea></div>'+
+      '<div class="field full"><label for="f-facts">ข้อเท็จจริงโดยย่อ</label><textarea id="f-facts" placeholder="ใช้คำว่า โจทก์ จำเลย หรือชื่อย่อ ไม่ใส่ชื่อจริงของคู่ความ">'+esc(e.facts)+'</textarea><small>เพื่อคุ้มครองข้อมูลส่วนบุคคลของลูกจ้างและคู่ความ</small></div>'+
+      '<div class="field"><label for="f-laws">กฎหมายและมาตรา</label><input id="f-laws" value="'+esc(e.laws)+'" placeholder="เช่น พ.ร.บ.คุ้มครองแรงงาน ม.119"></div>'+
+      '<div class="field"><label for="f-result">ผลคดี</label><input id="f-result" value="'+esc(e.result)+'" placeholder="เช่น พิพากษายืน ยกฟ้อง"></div>'+
+      '<div class="field"><label for="f-source">ชื่อแหล่งที่มา</label><input id="f-source" value="'+esc(e.source)+'" placeholder="เช่น ระบบสืบค้นคำพิพากษาศาลฎีกา"></div>'+
+      '<div class="field"><label for="f-url">ลิงก์แหล่งที่มา</label><input id="f-url" type="url" value="'+esc(e.url)+'" placeholder="https://"></div>'+
+      '<div class="field"><label for="f-status">สถานะ</label><select id="f-status"><option value="pending"'+(e.status!=="verified"?' selected':'')+'>รอตรวจทานกับต้นฉบับ</option><option value="verified"'+(e.status==="verified"?' selected':'')+'>ตรวจทานกับต้นฉบับแล้ว</option></select></div>'+
+      '<div class="field full"><label for="f-full">ลิงก์คำพิพากษาฉบับเต็ม</label><input id="f-full" type="url" value="'+esc(e.full||"")+'" placeholder="https://deka.in.th/deka/2559-642"><small>ลิงก์ไปยังหน้าที่มีเนื้อหาคำพิพากษาเต็ม เปิดตรวจก่อนบันทึกว่าเลขคดีตรงกัน</small></div>'+
+      '<div class="field"><label for="f-note">หมายเหตุ</label><input id="f-note" value="'+esc(e.note)+'" placeholder="เช่น กฎหมายแก้ไขแล้ว ใช้เทียบเคียงอย่างระวัง"></div>'+
+    '</div>'+
+    '<div id="edmsg"></div>'+
+    '<div class="case-actions"><button class="btn" type="submit" id="saveBtn">บันทึกเข้าคลัง</button><button class="btn ghost" type="button" data-act="cancel">ยกเลิก</button></div>'+
+  '</form>';
+}
+function readForm(){
+  var e=state.editing;
+  var v=function(id){ return ($(id).value||"").trim(); };
+  var base = JSON.parse(JSON.stringify(e||{}));
+  var rec = Object.assign(base, {
+    id: e.id || ("c"+Date.now().toString(36)),
+    court: v("f-court"), number: v("f-number").replace(/\s+/g,""),
+    issues: Array.prototype.slice.call(document.querySelectorAll('input[name="iss"]:checked')).map(function(x){ return x.value; }),
+    holding: v("f-holding"), facts: v("f-facts"), laws: v("f-laws"), result: v("f-result"),
+    source: v("f-source"), url: v("f-url"), full: v("f-full"), status: v("f-status"), note: v("f-note")
+  });
+  if(rec.full !== (e.full||"")) { rec.fullKind = "full"; delete rec.checked; }
+  if(rec.holding !== (e.holding||"")) delete rec.checked;
+  if(!rec.full){ delete rec.full; delete rec.fullKind; delete rec.checked; }
+  return rec;
+}
+function validate(c){
+  c.number = c.number.replace(/[–—]/g,"-");
+  if(!/^\d{1,6}(-\d{1,6})?\/\d{4}$/.test(c.number) && !(state.editing && state.editing.id && state.editing.number===c.number)) return "ใส่เลขคำพิพากษาในรูปแบบ เลข/ปี พ.ศ. เช่น 1234/2565 หรือ 1757-1772/2564";
+  if(!c.issues.length) return "เลือกประเด็นปัญหาอย่างน้อยหนึ่งประเด็น";
+  if(c.holding.length<20) return "สรุปหลักกฎหมายที่ศาลวางให้ครบพอเข้าใจ";
+  if(c.url && !safeUrl(c.url)) return "ลิงก์แหล่งที่มาต้องขึ้นต้นด้วย https:// หรือ http://";
+  if(c.full && !safeUrl(c.full)) return "ลิงก์คำพิพากษาฉบับเต็มต้องขึ้นต้นด้วย https:// หรือ http://";
+  var dup = data.cases.find(function(x){ return x.id!==c.id && x.court===c.court && x.number===c.number; });
+  if(dup) return "มี "+COURTS[c.court]+" ที่ "+c.number+" อยู่ในคลังแล้ว แก้ไขรายการเดิมแทน";
+  return "";
+}
+
+/* ---------- บันทึก ---------- */
+function today(){ var d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function save(next, okMsg, msgEl){
+  var payload = JSON.stringify({updated: today(), cases: next}, null, 2);
+  if(!art){ return Promise.reject({code:"not_granted"}); }
+  if(state.editing) store("draft", state.editing);
+  return art.publish({"data/cases.json": payload}).then(function(){
+    data = {updated: today(), cases: next};
+    store("draft", null);
+    state.editing=null; state.confirmDel=null;
+    render(); toast(okMsg);
+  }, function(err){
+    var code = err && err.code;
+    if(code==="conflict"){ show(msgEl,"info","มีคนบันทึกคลังก่อนหน้าเล็กน้อย หน้าจะโหลดข้อมูลล่าสุด ร่างของคุณยังเก็บไว้ให้"); return; }
+    if(code==="not_writer"||code==="not_granted"||code==="consent_required"||code==="capability_disabled"||code==="capability_removed"||code==="not_declared"){
+      state.readOnly=true;
+      show(msgEl,"err","บัญชีนี้เปิดดูได้อย่างเดียว บันทึกไม่ได้ กดคัดลอกข้อมูลรายการนี้แล้วส่งให้ผู้ดูแลคลัง");
+      offerCopy(msgEl, state.editing ? readForm() : null);
+      return;
+    }
+    if(code==="rate_limited"){ show(msgEl,"err","บันทึกถี่เกินไป รอสักครู่แล้วกดบันทึกอีกครั้ง"); return; }
+    if(code==="too_large"){ show(msgEl,"err","คลังมีขนาดใหญ่เกินกำหนด แจ้งผู้ดูแลให้แบ่งไฟล์ข้อมูล"); return; }
+    show(msgEl,"err","บันทึกไม่สำเร็จเพราะระบบขัดข้องชั่วคราว ลองกดบันทึกอีกครั้ง");
+  });
+}
+function show(el,kind,text){ if(!el) el=$("msg"); el.innerHTML='<div class="notice '+kind+'">'+esc(text)+'</div>'; }
+function offerCopy(el, rec){
+  if(!rec || !el) return;
+  var b=document.createElement("button"); b.type="button"; b.className="btn ghost"; b.style.marginTop="8px"; b.textContent="คัดลอกข้อมูลรายการนี้";
+  var txt=JSON.stringify(rec,null,2);
+  b.addEventListener("click",function(){
+    var done=function(){ b.textContent="คัดลอกแล้ว"; };
+    try{ navigator.clipboard.writeText(txt).then(done,function(){ fallback(); }); }catch(e){ fallback(); }
+    function fallback(){ var t=document.createElement("textarea"); t.value=txt; t.style.width="100%"; t.rows=8; el.appendChild(t); t.select(); }
+  });
+  el.appendChild(b);
+}
+
+/* ---------- เหตุการณ์ ---------- */
+document.addEventListener("click", function(ev){
+  var t=ev.target.closest("button"); if(!t) return;
+  if(t.dataset.g!=null && !t.dataset.issue){ var gi=+t.dataset.g; openGroups[gi]=!(t.getAttribute("aria-expanded")==="true"); if(!openGroups[gi] && TAX[gi].items.some(function(i){return i.id===state.issue;})) openGroups[gi]=true; renderTree(); return; }
+  if(t.dataset.issue!=null){
+    state.issue=t.dataset.issue; state.group=null; state.confirmDel=null;
+    if(state.issue){ var gi2=TAX.findIndex(function(g){ return g.items.some(function(i){return i.id===state.issue;}); }); openGroups[gi2]=true; }
+    if(window.matchMedia("(max-width:860px)").matches){ $("treeBody").hidden=true; $("treeToggle").setAttribute("aria-expanded","false"); }
+    render(); (t.classList.contains("qbtn") ? $("main-col") : $("listTitle")).scrollIntoView({block: t.classList.contains("qbtn") ? "start" : "nearest"});
+    return;
+  }
+  if(t.dataset.kw){
+    var kw=t.dataset.kw;
+    var ok=function(){ t.classList.add("done"); toast("คัดลอก “"+kw+"” แล้ว"); };
+    try{ navigator.clipboard.writeText(kw).then(ok,function(){ toast("คัดลอกไม่ได้ในหน้าจอนี้ เลือกข้อความแล้วคัดลอกเอง"); }); }catch(e){ toast("คัดลอกไม่ได้ในหน้าจอนี้ เลือกข้อความแล้วคัดลอกเอง"); }
+    return;
+  }
+  if(t.dataset.cite){
+    var cc=data.cases.find(function(x){ return x.id===t.dataset.cite; }); if(!cc) return;
+    var ph = cc.kind==="วร" ? "คำวินิจฉัยประธานศาลอุทธรณ์คดีชำนัญพิเศษที่ " : cc.court==="sc" ? "คำพิพากษาศาลฎีกาที่ " : "คำพิพากษาศาลอุทธรณ์คดีชำนัญพิเศษที่ ";
+    var txt = ph+cc.number+"\nหลักกฎหมาย: "+(cc.holding||"")+(cc.result?"\nผลคดี: "+cc.result:"")+(cc.laws?"\nกฎหมายที่เกี่ยวข้อง: "+cc.laws:"")+"\nที่มาของสรุป: "+(cc.source||"")+" (สรุปโดยสำนักงานทนายความและที่ปรึกษากฎหมายพรนารายณ์และเพื่อน โปรดตรวจกับคำพิพากษาฉบับเต็มก่อนอ้างอิง)";
+    var ok2=function(){ t.classList.add("done"); t.textContent="คัดลอกแล้ว"; toast("คัดลอก "+ph+cc.number+" พร้อมหลักกฎหมายแล้ว"); };
+    try{ navigator.clipboard.writeText(txt).then(ok2,function(){ toast("คัดลอกไม่ได้ในหน้าจอนี้ เลือกข้อความแล้วคัดลอกเอง"); }); }catch(e){ toast("คัดลอกไม่ได้ในหน้าจอนี้ เลือกข้อความแล้วคัดลอกเอง"); }
+    return;
+  }
+  if(t.dataset.goto){ gotoCase(t.dataset.goto); return; }
+  if(t.dataset.gsel!=null){ state.group=+t.dataset.gsel; state.issue=""; openGroups[state.group]=true; render(); $("panel").scrollIntoView({block:"start",behavior:"smooth"}); return; }
+  var act=t.dataset.act;
+  if(act==="ov"){ state.group=null; render(); return; }
+  if(t.id==="addBtn"){ state.editing=blank(); state.confirmDel=null; render(); $("f-number").focus(); return; }
+  if(t.id==="treeToggle"){ var b=$("treeBody"); b.hidden=!b.hidden; t.setAttribute("aria-expanded", b.hidden?"false":"true"); return; }
+  if(act==="more"){ state.limit=(state.limit||40)+40; renderList(); return; }
+  if(act==="clearq"){ state.q=""; $("q").value=""; renderList(); $("q").focus(); return; }
+  if(act==="cancel"){ state.editing=null; store("draft",null); render(); return; }
+  if(act==="edit"){ var c=data.cases.find(function(x){return x.id===t.dataset.id;}); if(c){ state.editing=JSON.parse(JSON.stringify(c)); render(); window.scrollTo({top:$("editorSlot").getBoundingClientRect().top+window.scrollY-12}); } return; }
+  if(act==="del"){ state.confirmDel=t.dataset.id; renderList(); return; }
+  if(act==="del-no"){ state.confirmDel=null; renderList(); return; }
+  if(act==="del-yes"){
+    var id=t.dataset.id; t.disabled=true;
+    save(data.cases.filter(function(x){return x.id!==id;}), "ลบรายการแล้ว", $("msg"));
+    return;
+  }
+});
+document.addEventListener("submit", function(ev){
+  if(ev.target.id==="lkform"){ ev.preventDefault(); lookup(); return; }
+  if(ev.target.id!=="ed") return;
+  ev.preventDefault();
+  var rec=readForm(), err=validate(rec), m=$("edmsg");
+  if(err){ show(m,"err",err); return; }
+  state.editing=rec;
+  var next = data.cases.filter(function(x){ return x.id!==rec.id; }).concat([rec]);
+  $("saveBtn").disabled=true; show(m,"info","กำลังบันทึก");
+  save(next, data.cases.some(function(x){return x.id===rec.id;}) ? "บันทึกการแก้ไขแล้ว" : "เพิ่มเข้าคลังแล้ว", m)
+    .catch(function(){ show(m,"err","หน้าจอนี้บันทึกข้อมูลไม่ได้ กดคัดลอกข้อมูลรายการนี้แล้วส่งให้ผู้ดูแลคลัง"); offerCopy(m, rec); })
+    .then(function(){ var s=$("saveBtn"); if(s) s.disabled=false; });
+});
+document.addEventListener("click", function(ev){
+  var s=ev.target.closest("#yc span"); if(!s) return;
+  var tip=$("ytip"); if(tip) tip.textContent="ปี "+s.dataset.y+" มี "+s.dataset.n+" คำพิพากษาในคลัง";
+});
+
+/* ---------- ตัวอ่าน PDF ในหน้า (เปิดไฟล์ที่เก็บไว้ในคลังโดยไม่ต้องออกจากหน้า) ---------- */
+var PDFJS="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+var pdfLib=null, pv={doc:null,file:"",page:1,zoom:1,task:null};
+function loadScript(src){ return new Promise(function(res,rej){ var s=document.createElement("script"); s.src=src; s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
+function ensurePdf(){
+  if(!pdfLib) pdfLib=loadScript(PDFJS+"pdf.worker.min.js").then(function(){ return loadScript(PDFJS+"pdf.min.js"); }).then(function(){
+    var L=window.pdfjsLib; L.GlobalWorkerOptions.workerSrc=PDFJS+"pdf.worker.min.js"; return L; });
+  return pdfLib;
+}
+function bookTitle(file){
+  var m=file.match(/kssr-([\w-]+)\.pdf/); if(!m) return "เอกสาร";
+  if(m[1].indexOf("m-")===0){ var n=m[1].slice(2).replace(/-(\d{4})$/,"/$1"); return "คำพิพากษาที่ "+n+" · สรุปคำพิพากษาประจำเดือน กองนิติการ กรมสวัสดิการและคุ้มครองแรงงาน"; }
+  return "สรุปคำพิพากษาคดีแรงงาน "+(BOOKS[m[1]]||("ปี "+m[1]))+" · กองนิติการ กรมสวัสดิการและคุ้มครองแรงงาน";
+}
+function openPdf(file,page){
+  var box=$("pv"); box.hidden=false; document.body.style.overflow="hidden";
+  $("pvtitle").textContent=bookTitle(file); $("pvmsg").hidden=false; $("pvmsg").textContent="กำลังเปิดเอกสาร ไฟล์ใหญ่อาจใช้เวลาสักครู่";
+  $("pvcanvas").hidden=true; $("pvclose").focus();
+  pv.page=page||1;
+  if(pv.doc && pv.file===file){ renderPdf(); return; }
+  pv.file=file; pv.doc=null;
+  ensurePdf().then(function(L){ return L.getDocument({url:file}).promise; }).then(function(doc){
+    if(pv.file!==file) return; pv.doc=doc; $("pvtotal").textContent=doc.numPages; renderPdf();
+  }).catch(function(){
+    $("pvmsg").textContent="เปิดเอกสารไม่สำเร็จ ตรวจการเชื่อมต่ออินเทอร์เน็ตแล้วลองกดเปิดอีกครั้ง";
+  });
+}
+function renderPdf(){
+  var doc=pv.doc; if(!doc) return;
+  pv.page=Math.min(Math.max(1,pv.page),doc.numPages); $("pvpage").value=pv.page;
+  doc.getPage(pv.page).then(function(pg){
+    var body=$("pvbody"), base=pg.getViewport({scale:1});
+    var fit=Math.min(body.clientWidth-32, 980)/base.width, scale=fit*pv.zoom, dpr=window.devicePixelRatio||1;
+    var vp=pg.getViewport({scale:scale*dpr}), c=$("pvcanvas");
+    c.width=Math.floor(vp.width); c.height=Math.floor(vp.height);
+    c.style.width=Math.floor(vp.width/dpr)+"px"; c.style.height=Math.floor(vp.height/dpr)+"px";
+    if(pv.task){ try{ pv.task.cancel(); }catch(e){} }
+    pv.task=pg.render({canvasContext:c.getContext("2d"),viewport:vp});
+    return pv.task.promise.then(function(){ $("pvmsg").hidden=true; c.hidden=false; body.scrollTop=0; });
+  }).catch(function(e){ if(e && e.name==="RenderingCancelledException") return; $("pvmsg").textContent="แสดงหน้านี้ไม่สำเร็จ"; });
+}
+function closePdf(){ $("pv").hidden=true; document.body.style.overflow=""; }
+document.addEventListener("click", function(ev){
+  var a=ev.target.closest('a[href^="pdf/"]'); if(!a) return;
+  ev.preventDefault();
+  var m=a.getAttribute("href").match(/^(pdf\/[^#]+)(?:#page=(\d+))?/); if(m) openPdf(m[1], +(m[2]||1));
+}, true);
+$("pvclose").addEventListener("click", closePdf);
+$("pvprev").addEventListener("click", function(){ pv.page--; renderPdf(); });
+$("pvnext").addEventListener("click", function(){ pv.page++; renderPdf(); });
+$("pvin").addEventListener("click", function(){ pv.zoom=Math.min(3,pv.zoom*1.25); renderPdf(); });
+$("pvout").addEventListener("click", function(){ pv.zoom=Math.max(.5,pv.zoom/1.25); renderPdf(); });
+$("pvpage").addEventListener("change", function(){ pv.page=parseInt(this.value,10)||1; renderPdf(); });
+document.addEventListener("keydown", function(ev){
+  if($("pv").hidden) return;
+  if(ev.key==="Escape") closePdf();
+  else if(ev.key==="ArrowRight" && ev.target.id!=="pvpage"){ pv.page++; renderPdf(); }
+  else if(ev.key==="ArrowLeft" && ev.target.id!=="pvpage"){ pv.page--; renderPdf(); }
+});
+var qTimer;
+$("q").addEventListener("input", function(){ clearTimeout(qTimer); qTimer=setTimeout(function(){ state.q=$("q").value; renderList(); },150); });
+$("qform").addEventListener("submit", function(ev){
+  ev.preventDefault(); clearTimeout(qTimer); state.q=$("q").value; renderList();
+  if(window.matchMedia("(max-width:860px)").matches) $("q").blur();
+  var el=document.querySelector(".listhead"); if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
+});
+$("court").addEventListener("change", function(){ state.court=this.value; renderList(); });
+$("fullf").addEventListener("change", function(){ state.fullOnly=this.value; renderList(); });
+if(window.matchMedia("(max-width:860px)").matches){ $("treeBody").hidden=true; }
+if(window.matchMedia("(max-width:520px)").matches){ $("q").placeholder="พิมพ์คำค้น เช่น ค่าชดเชย"; }
+
+/* ---------- เริ่มทำงาน ---------- */
+var hash = (location.hash||"").slice(1);
+if(hash && ISSUE[hash]) state.issue = hash;
+render();
+fetch("data/cases.json", {cache:"no-store"}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){
+  data = {updated: j.updated||"", cases: Array.isArray(j.cases)?j.cases:[]};
+  render();
+}).catch(function(){
+  $("stats").textContent = "โหลดข้อมูลคลังไม่สำเร็จ ลองเปิดหน้านี้ใหม่";
+});
+if(window.claude && typeof window.claude.use==="function"){
+  window.claude.use("user").then(function(u){
+    if(!u) return;
+    return u.canEdit().then(function(ok){
+      if(!ok){ state.readOnly=true; render(); return; }
+      var hid=data.cases.filter(function(c){ return c.hidden; }).length, sel=$("fullf");
+      if(!sel.querySelector('option[value="hidden"]')){ var o=document.createElement("option"); o.value="hidden"; o.textContent="รายการที่ซ่อนไว้ รอตรวจเลขคดี (เห็นเฉพาะผู้ดูแล)"; sel.appendChild(o); }
+    });
+  }).catch(function(){});
+  window.claude.use("artifact").then(function(a){
+    art = a || null;
+    var d = recall("draft");
+    if(art && d){ state.editing = d; }
+    render();
+  }, function(){});
+}
+})();
+</script>
+
+</body>
+</html>
