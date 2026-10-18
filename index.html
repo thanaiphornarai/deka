@@ -58,6 +58,11 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* หัวหน้า */
 .top{background:radial-gradient(ellipse 70% 95% at 85% 108%, var(--glow) 0%, #0A2D50 40%, var(--hero) 80%);color:var(--hero-text);position:relative}
 .firm span{display:block;white-space:nowrap}
+.firm a{color:inherit;text-decoration:none}
+.firm a:hover span{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.firmlink{margin:6px 0 0;font-size:15px}
+.firmlink a{color:var(--hero-text);text-decoration:none;border:1px solid rgba(93,167,236,.55);border-radius:999px;padding:4px 14px;display:inline-block}
+.firmlink a:hover{background:rgba(93,167,236,.15)}
 .firm{font-family:var(--display);font-weight:700;font-size:clamp(16px,4.5vw,46px);line-height:1.35;color:var(--sun);margin:0;letter-spacing:.005em}
 .top::after{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--hero),var(--sun) 50%,var(--hero))}
 .top .eyebrow{color:var(--hero-muted)}
@@ -313,7 +318,8 @@ fieldset.field{border:1px solid var(--line);border-radius:10px;padding:10px 12px
 
 <header class="top">
   <div class="wrap">
-    <p class="firm"><span>สำนักงานทนายความและที่ปรึกษากฎหมาย</span><span>พรนารายณ์และเพื่อน</span></p>
+    <p class="firm"><a href="https://thanaiphorn.com/" target="_blank" rel="noopener" title="ไปที่เว็บไซต์สำนักงาน thanaiphorn.com"><span>สำนักงานทนายความและที่ปรึกษากฎหมาย</span><span>พรนารายณ์และเพื่อน</span></a></p>
+    <p class="firmlink"><a href="https://thanaiphorn.com/" target="_blank" rel="noopener">เว็บไซต์สำนักงาน thanaiphorn.com ↗</a></p>
     <div class="herohead"><div style="display:grid;gap:12px;min-width:0">
     <h1>คลัง<span class="hl">คำพิพากษา</span>คดีแรงงาน</h1>
     <p class="lede">เลือกประเด็นปัญหาหรือพิมพ์คำค้น เพื่ออ่านสรุปหลักกฎหมายจากคำพิพากษาศาลฎีกาและศาลอุทธรณ์คดีชำนัญพิเศษ และเปิดเอกสารที่ใช้สรุปของแต่ละเรื่อง</p>
@@ -450,6 +456,7 @@ fieldset.field{border:1px solid var(--line);border-radius:10px;padding:10px 12px
       <p><b>เกี่ยวกับคลังนี้</b> สำนักงานทนายความและที่ปรึกษากฎหมายพรนารายณ์และเพื่อนจัดทำคลังนี้เพื่อเผยแพร่ความรู้กฎหมายแรงงานแก่ลูกจ้าง นายจ้าง สหภาพแรงงาน และผู้ปฏิบัติงานด้านแรงงาน สรุปข้อเท็จจริงและหลักกฎหมายในแต่ละรายการเป็นงานเรียบเรียงของสำนักงาน ไม่ใช่ย่อคำพิพากษาฉบับทางการของศาลหรือของกรมสวัสดิการและคุ้มครองแรงงาน ทุกรายการระบุแหล่งที่มา และเปิดเอกสารที่ใช้สรุปได้จากเอกสารของรายการนั้น</p>
       <p><b>ข้อควรระวังในการนำไปใช้</b> คำพิพากษาคดีแรงงานที่ตัดสินตั้งแต่ศาลอุทธรณ์คดีชำนัญพิเศษเปิดทำการ ส่วนใหญ่ถึงที่สุดในชั้นอุทธรณ์และไม่ปรากฏในระบบของศาลฎีกา บางเรื่องในเอกสารของ กสร. ยังไม่ถึงที่สุดขณะเผยแพร่ เมื่อศาลอุทธรณ์หรือศาลฎีกาไม่รับวินิจฉัยประเด็นใดเพราะเป็นอุทธรณ์ในข้อเท็จจริง สรุปจะระบุว่าข้อนั้นเป็นข้อที่ศาลแรงงานวินิจฉัยไว้ คลังนี้ใช้เพื่อค้นคว้าเบื้องต้น ก่อนอ้างอิงในคำฟ้อง คำให้การ หรือความเห็นทางกฎหมาย ต้องตรวจกับคำพิพากษาฉบับเต็ม และตรวจว่ากฎหมายที่ศาลใช้วินิจฉัยได้รับการแก้ไขภายหลังหรือไม่ เช่น อัตราค่าชดเชยตาม พ.ร.บ.คุ้มครองแรงงาน มาตรา 118 ที่แก้ไขเมื่อ พ.ศ. 2562</p>
       <p><b>ลิขสิทธิ์ของเอกสารต้นฉบับ</b> คำพิพากษา คำสั่ง คำวินิจฉัย รายงานของทางราชการ และการรวบรวมสิ่งเหล่านี้ที่หน่วยงานของรัฐจัดทำ ไม่ถือเป็นงานอันมีลิขสิทธิ์ตาม พ.ร.บ.ลิขสิทธิ์ พ.ศ. 2537 มาตรา 7 (4) และ (5) หนังสือสรุปคำพิพากษาของกองนิติการ กรมสวัสดิการและคุ้มครองแรงงานที่เปิดอ่านได้ในคลังนี้มีเนื้อหาตรงกับฉบับที่หน่วยงานเผยแพร่ สำนักงานปรับเฉพาะขนาดไฟล์เพื่อให้เปิดอ่านได้เร็วขึ้น</p>
+      <p><b>เว็บไซต์สำนักงาน</b> <a href="https://thanaiphorn.com/" target="_blank" rel="noopener" style="color:var(--sun)">thanaiphorn.com</a></p>
       <p class="ailine">สรุปจัดทำด้วยความช่วยเหลือของระบบปัญญาประดิษฐ์และตรวจเทียบกับต้นฉบับ</p>
     </div>
   </div>
