@@ -596,7 +596,7 @@ var art = null;
 function $(id){ return document.getElementById(id); }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];}); }
 function yearOf(c){ var m=String(c.number||"").match(/\/(\d{4})\s*$/); return m?+m[1]:0; }
-function safeUrl(u){ return (/^https?:\/\//i.test(u||"") || /^pdf\/kssr-[\w-]+\.pdf(#page=\d+)?$/.test(u||"")) ? u : ""; }
+function safeUrl(u){ return (/^https?:\/\//i.test(u||"") || /^pdf\/(kssr|deka-sc)-[\w-]+\.pdf(#page=\d+)?$/.test(u||"")) ? u : ""; }
 function toast(t){ var d=document.createElement("div"); d.className="toast"; d.textContent=t; document.body.appendChild(d); setTimeout(function(){ d.remove(); },2200); }
 
 function store(k,v){ try{ if(v==null) sessionStorage.removeItem(k); else sessionStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
@@ -725,7 +725,7 @@ function caseCard(c){
       (c.plenary?'<span class="chip plenary">ประชุมใหญ่</span>':'')+
       (c.key?'<span class="chip key">สำนักงานคัดเลือก</span>':'')+
       (c.status==="verified"?'<span class="chip verified">ทนายตรวจทานแล้ว</span>':
-        (c.checked==="sjapsc"?'<span class="chip checked">สำนักงานสรุปจากย่อข้อกฎหมายของศาล</span>':c.checked==="kssr"?'<span class="chip checked">สำนักงานสรุปจากเอกสารของ กสร.</span>':(c.checked?'<span class="chip checked">สำนักงานสรุปจากคำพิพากษาฉบับเต็ม</span>':'')))+'</div>'+
+        (c.checked==="sjapsc"||c.checked==="scdeka"?'<span class="chip checked">สำนักงานสรุปจากย่อข้อกฎหมายของศาล</span>':c.checked==="kssr"?'<span class="chip checked">สำนักงานสรุปจากเอกสารของ กสร.</span>':(c.checked?'<span class="chip checked">สำนักงานสรุปจากคำพิพากษาฉบับเต็ม</span>':'')))+'</div>'+
     foundIn(c)+
     (c.holding?'<p class="holding">'+hl(c.holding)+'</p>':'<p class="holding pendingtext">ยังไม่ได้สรุปหลักกฎหมาย เปิดอ่านย่อข้อกฎหมายฉบับทางการของศาลได้ที่ปุ่มด้านล่าง</p>')+
     
@@ -750,9 +750,9 @@ function hostOf(u){ if(/^pdf\//.test(String(u))) return "kssr"; var m=String(u).
 function fullRow(c){
   var f=safeUrl(c.full), h="";
   if(f){
-    var label = c.fullKind==="short" ? "อ่านคำพิพากษา (มีเฉพาะย่อสั้น)" : c.fullKind==="official" ? "อ่านย่อสั้นและย่อยาวของศาล" : c.fullKind==="kssr" ? (c.kssr && String(c.kssr.b).indexOf("m-")===0 ? "อ่านคำพิพากษาฉบับเต็ม (เอกสาร กสร.)" : "เปิดหนังสือ กสร. หน้า "+(c.kssr?c.kssr.p:"")) : "อ่านคำพิพากษาฉบับเต็ม";
+    var label = c.fullKind==="scdeka" ? "อ่านคำพิพากษาฉบับเต็ม (พิมพ์จากระบบของศาลฎีกา)" : c.fullKind==="short" ? "อ่านคำพิพากษา (มีเฉพาะย่อสั้น)" : c.fullKind==="official" ? "อ่านย่อสั้นและย่อยาวของศาล" : c.fullKind==="kssr" ? (c.kssr && String(c.kssr.b).indexOf("m-")===0 ? "อ่านคำพิพากษาฉบับเต็ม (เอกสาร กสร.)" : "เปิดหนังสือ กสร. หน้า "+(c.kssr?c.kssr.p:"")) : "อ่านคำพิพากษาฉบับเต็ม";
     var host = hostOf(f);
-    var srcText = host==="deka.in.th" ? "จาก ThaiDeka (deka.in.th) เว็บไซต์เอกชนที่เผยแพร่คำพิพากษาศาลฎีกา ไม่ใช่ระบบของศาล"
+    var srcText = c.fullKind==="scdeka" ? "จากระบบสืบค้นคำพิพากษาศาลฎีกา deka.supremecourt.or.th (แหล่งทางการ)" : host==="deka.in.th" ? "จาก ThaiDeka (deka.in.th) เว็บไซต์เอกชนที่เผยแพร่คำพิพากษาศาลฎีกา ไม่ใช่ระบบของศาล"
       : host==="sjapsc.coj.go.th" ? "จากระบบสืบค้นย่อข้อกฎหมายของศาลอุทธรณ์คดีชำนัญพิเศษ (แหล่งทางการ)"
       : host==="kssr" ? "สรุปคำพิพากษาคดีแรงงาน "+(c.kssr?bookLabel(c.kssr):"")+" ของกองนิติการ กรมสวัสดิการและคุ้มครองแรงงาน (หน้าตามไฟล์ PDF)" : "จาก "+esc(host);
     h += '<a class="btn fullbtn" href="'+esc(f)+'" target="_blank" rel="noopener">'+label+' ↗</a>'+
